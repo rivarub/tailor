@@ -151,6 +151,41 @@
 }
 
 @media screen and (max-width: $screen-smartphone-xs) {
+    .cd-bg-1 {
+        p {
+            @include suffix(0,12);
+            //@include post(1);
+        }
+        .blockquote {
+            //@include pre(1);
+            //@include span-columns(8,12);
+            @include pad(0.99,0,12);
+        }
+        /*    p.blockquote:nth-child(2) {
+                margin-bottom: 60px;
+            }*/
+        .inside {          
+            //width: 100%;
+            //hight: 100%;
+/*            .line {
+                @include pre(0.99,12); 
+                //margin-left: 8.5%;
+            }*/
+            p.opinion1 {
+                @include pad(0.7,0,12);
+                //@include prefix(1,12);
+                //@include span-columns(8,12);
+                //margin-left: 25px;
+            }
+            p.opinion2 {
+                //width: 75%;
+                @include pad(0.7,0,12);
+                //@include span-columns(10,12);
+                //@include pre(-0.3);
+                //@include push(0.34);        
+            }
+        }
+    }
     .cd-color-3 {
         .left {
             .row {

@@ -390,7 +390,7 @@ P {
 @media screen and (min-width: 320px) {
   /* line 53, ../sass/partials/_typography.scss */
   .cd-color-3 .right li {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 @media screen and (min-width: 540px) {
@@ -408,13 +408,13 @@ P {
 @media screen and (min-width: 991px) {
   /* line 53, ../sass/partials/_typography.scss */
   .cd-color-3 .right li {
-    font-size: 1.125em;
+    font-size: 1em;
   }
 }
 @media screen and (min-width: 1299px) {
   /* line 53, ../sass/partials/_typography.scss */
   .cd-color-3 .right li {
-    font-size: 1.125em;
+    font-size: 1em;
   }
 }
 /* line 58, ../sass/partials/_typography.scss */
@@ -590,7 +590,7 @@ h1 {
 @media screen and (min-width: 320px) {
   /* line 23, ../sass/partials/_base.scss */
   h1 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 540px) {
@@ -634,7 +634,7 @@ h2 {
 @media screen and (min-width: 320px) {
   /* line 33, ../sass/partials/_base.scss */
   h2 {
-    font-size: 1.1em;
+    font-size: 0.95em;
   }
 }
 @media screen and (min-width: 540px) {
@@ -722,7 +722,7 @@ p, blockquote {
 @media screen and (min-width: 320px) {
   /* line 49, ../sass/partials/_base.scss */
   p, blockquote {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 @media screen and (min-width: 540px) {
@@ -740,13 +740,13 @@ p, blockquote {
 @media screen and (min-width: 991px) {
   /* line 49, ../sass/partials/_base.scss */
   p, blockquote {
-    font-size: 1.125em;
+    font-size: 1em;
   }
 }
 @media screen and (min-width: 1299px) {
   /* line 49, ../sass/partials/_base.scss */
   p, blockquote {
-    font-size: 1.125em;
+    font-size: 1em;
   }
 }
 
@@ -1121,44 +1121,43 @@ nav[role="navigation"] ul.menu {
 @media screen and (min-width: 200px) {
   /* line 109, ../sass/partials/_modules.scss */
   nav[role="navigation"] ul.menu {
-    font-size: 0.9em;
+    font-size: 0.95em;
   }
 }
 @media screen and (min-width: 320px) {
   /* line 109, ../sass/partials/_modules.scss */
   nav[role="navigation"] ul.menu {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 }
 @media screen and (min-width: 540px) {
   /* line 109, ../sass/partials/_modules.scss */
   nav[role="navigation"] ul.menu {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 }
 @media screen and (min-width: 767px) {
   /* line 109, ../sass/partials/_modules.scss */
   nav[role="navigation"] ul.menu {
-    font-size: 1.05em;
+    font-size: 0.9em;
   }
 }
 @media screen and (min-width: 991px) {
   /* line 109, ../sass/partials/_modules.scss */
   nav[role="navigation"] ul.menu {
-    font-size: 1.05em;
+    font-size: 1em;
   }
 }
 @media screen and (min-width: 1299px) {
   /* line 109, ../sass/partials/_modules.scss */
   nav[role="navigation"] ul.menu {
-    font-size: 1.125em;
+    font-size: 1em;
   }
 }
 /* line 151, ../sass/partials/_modules.scss */
 nav[role="navigation"] ul.lang {
   float: right;
   text-transform: uppercase;
-  font-size: 1.125em;
   letter-spacing: 0.08em;
   margin-top: 0.45em;
   margin-left: 1.3em;
@@ -1260,7 +1259,7 @@ nav[role="navigation"] ul.lang li.selected a {
 @media screen and (min-width: 320px) {
   /* line 251, ../sass/partials/_modules.scss */
   .cd-bg-1 .inside p.opinion2 {
-    font-size: 1.1em;
+    font-size: 0.95em;
   }
 }
 @media screen and (min-width: 540px) {
@@ -1316,7 +1315,7 @@ nav[role="navigation"] ul.lang li.selected a {
 @media screen and (min-width: 320px) {
   /* line 273, ../sass/partials/_modules.scss */
   .cd-color-2 ul {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 }
 @media screen and (min-width: 540px) {
@@ -1761,48 +1760,81 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 540px) {
-  /* line 156, ../sass/partials/_responsive.scss */
+  /* line 154, ../sass/partials/_responsive.scss */
+  .cd-bg-1 {
+    /*    p.blockquote:nth-child(2) {
+            margin-bottom: 60px;
+        }*/
+  }
+  /* line 155, ../sass/partials/_responsive.scss */
+  .cd-bg-1 p {
+    padding-right: 0%;
+  }
+  /* line 159, ../sass/partials/_responsive.scss */
+  .cd-bg-1 .blockquote {
+    padding-left: 6.31915%;
+    padding-right: 0%;
+  }
+  /* line 167, ../sass/partials/_responsive.scss */
+  .cd-bg-1 .inside {
+    /*            .line {
+                    @include pre(0.99,12); 
+                    //margin-left: 8.5%;
+                }*/
+  }
+  /* line 174, ../sass/partials/_responsive.scss */
+  .cd-bg-1 .inside p.opinion1 {
+    padding-left: 4.46809%;
+    padding-right: 0%;
+  }
+  /* line 180, ../sass/partials/_responsive.scss */
+  .cd-bg-1 .inside p.opinion2 {
+    padding-left: 4.46809%;
+    padding-right: 0%;
+  }
+
+  /* line 191, ../sass/partials/_responsive.scss */
   .cd-color-3 .left .row {
     margin-bottom: 0;
   }
-  /* line 160, ../sass/partials/_responsive.scss */
+  /* line 195, ../sass/partials/_responsive.scss */
   .cd-color-3 .left form .row:first-child {
     margin-bottom: 0;
   }
-  /* line 163, ../sass/partials/_responsive.scss */
+  /* line 198, ../sass/partials/_responsive.scss */
   .cd-color-3 .left form .col {
     width: 100%;
   }
-  /* line 165, ../sass/partials/_responsive.scss */
+  /* line 200, ../sass/partials/_responsive.scss */
   .cd-color-3 .left form .col label {
     font-size: 0.75em;
     margin-bottom: 0.05em;
   }
-  /* line 169, ../sass/partials/_responsive.scss */
+  /* line 204, ../sass/partials/_responsive.scss */
   .cd-color-3 .left form .col input {
     width: 100%;
     margin-bottom: 1em;
   }
-  /* line 174, ../sass/partials/_responsive.scss */
+  /* line 209, ../sass/partials/_responsive.scss */
   .cd-color-3 .left form .sub {
     width: 100%;
     margin-right: 0;
     margin-top: 2em;
     position: static;
   }
-  /* line 184, ../sass/partials/_responsive.scss */
+  /* line 219, ../sass/partials/_responsive.scss */
   .cd-color-3 .right .row {
     margin-bottom: 0;
   }
-  /* line 187, ../sass/partials/_responsive.scss */
+  /* line 222, ../sass/partials/_responsive.scss */
   .cd-color-3 .right #first, .cd-color-3 .right .hours {
     width: 100%;
   }
-  /* line 189, ../sass/partials/_responsive.scss */
+  /* line 224, ../sass/partials/_responsive.scss */
   .cd-color-3 .right #first .address, .cd-color-3 .right .hours .address {
     margin-top: 1em;
   }
-  /* line 193, ../sass/partials/_responsive.scss */
+  /* line 228, ../sass/partials/_responsive.scss */
   .cd-color-3 .right .hours {
     border-left: none;
     padding-left: 0;

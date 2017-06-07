@@ -11,7 +11,7 @@ $(document).ready(function () {
             $('.cd-bg-1').css('padding-top', '70px');
 //        $('nav').css('position', 'fixed').css('top', '6px').css('width', '100%');
 //        $('.nav-top').css('display', 'block').css('position', 'fixed').css('top', '0');
-            $('.nav-bottom').css('display', 'block').css('position', 'fixed').css('top', '56px');
+            $('.nav-bottom').css('display', 'block').css('position', 'fixed').css('top', '54px');
         } else {
             $('nav').css('position', 'static');
             $('.cd-bg-1').css('padding-top', '0');
