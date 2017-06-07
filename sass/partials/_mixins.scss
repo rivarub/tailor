@@ -1,0 +1,56 @@
+// Mixin for box-sizing
+// ====================================================================
+
+@mixin bs($bs-type: $defined-bs-type) {
+	-webkit-box-sizing: $bs-type;
+	-moz-box-sizing: $bs-type;
+	box-sizing: $bs-type;
+}
+
+// Mixin for creating pill shaped buttons
+// ====================================================================
+
+@mixin button-links($button-base: $color6,$button-hover: $color4) {
+	//border: 1px solid darken($color11,16%);
+        padding: .1em 0;
+	//padding: .1em .6em;
+	//margin-left: .7em;
+	//@include border-radius(8px);
+	//@include text-shadow(0 1px 2px $color11);
+	color: $color6;
+        //color: $color1;
+	//background-color: $button-base;
+	&:hover {
+		border-bottom: 3px solid;
+                color: $button-hover;
+	}
+}
+
+@mixin centerer($horizontal: true, $vertical: true) {
+    position: absolute;
+    @if ($horizontal and $vertical) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } @else if ($horizontal) {
+        left: 50%;
+        transform: translate(-50%, 0);
+    } @else if ($vertical) {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,131 @@
+$color1: #ffffff; // white
+$color2: #000000; //black
+$color3: #ece3da; //bege-novigation
+$color4: #6b5554; //brown-active
+$color5: #4d3b20; //brown-dark
+$color6: #484047; //dark
+$color7: #aa0019; //red
+$color8: #a67c52; // gold-middle
+$color9: #866845; // gold-midle-dark
+$color10: #453216; //inside-block background
+$color11: #826845; //gold-dark-footer
+$color12: #918363; //submit
+
+// Fonts
+/*$blockquote: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;*/
+//$h1: 1.875em; // 30px
+$lh-h1: 1.7em; // line-height for h1
+//$h2: 1.375em; // 22px
+$lh-base: 2em; //line-height basic
+
+$p: 1.125em; //base for p, menu
+
+$ul: 1.25em; // ul content
+$lh-ul: 2em; //line-height ul content
+
+$lh-ul-contact: 1.6em; //line-height-contact
+$lh-h3-contact: 1.5em; //line-height-h3-contact
+
+
+// Mixin variables
+$defined-bs-type: border-box !default;
+
+//margins
+$nav-top: 0.45em;
+$nav-top-mark: 0.3em;
+
+//==============RESPONSIVE VARIABLES===============
+// Smartphone
+$screen-smartphone-xxxs: 200px;
+$screen-smartphone-xxxs-min: 200px + 1;
+
+$screen-smartphone-xxs: 320px;
+$screen-smartphone-xs: 540px;
+$screen-smartphone: 767px;
+$screen-smartphone-min: $screen-smartphone + 1;
+
+// Tablet
+$screen-tablet: 991px;
+$screen-tablet-min: $screen-tablet + 1;
+
+// Desktop
+$screen-desktop: 1299px;
+$screen-desktop-min: $screen-desktop + 1;
+
+//================END RESPONSIVE VARIABLES============
+
+//=====================FONTS=========================
+$p-font-sizes: (
+null: 0.1em,
+$screen-smartphone-xxxs: 0.75em,
+$screen-smartphone-xxs: 0.9em,
+$screen-smartphone-xs: 0.95em,
+$screen-smartphone: 1em,
+$screen-tablet: 1.125em,
+$screen-desktop: 1.125em,
+);
+$ul-menu: (
+null: 0.1em,
+$screen-smartphone-xxxs : 0.9em,
+$screen-smartphone-xxs : 1em,
+$screen-smartphone-xs: 1em,
+$screen-smartphone: 1.05em,
+$screen-tablet: 1.05em,
+$screen-desktop: 1.125em,
+);
+$ul-services: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.8em,
+$screen-smartphone-xxs : 1em,
+$screen-smartphone-xs: 1.1em,
+$screen-smartphone: 1.2em,
+$screen-tablet: 1.1em,
+$screen-desktop: 1.25em,
+);
+$h1: (
+null: 0.1em,
+$screen-smartphone-xxxs: 0.75em,
+$screen-smartphone-xxs: 1em,
+$screen-smartphone-xs: 1.4em,
+$screen-smartphone: 1.5em,
+$screen-tablet: 1.7em,
+$screen-desktop: 1.875em,// 30px
+);
+$h2: (
+null: 0.1em,
+$screen-smartphone-xxxs: 0.9em,
+$screen-smartphone-xxs: 1.1em,
+$screen-smartphone-xs: 1.2em,
+$screen-smartphone: 1.25em,
+$screen-tablet: 1.3em,
+$screen-desktop: 1.375em, // 22px
+);
+$h3: (
+null  : 0.1em,
+$screen-smartphone-xxxs: 0.75em,
+$screen-smartphone-xxs: 0.9em,
+$screen-smartphone-xs: 1em,
+$screen-smartphone: 1.05em,
+$screen-tablet: 1.12em,
+$screen-desktop: 1.125em, //18px
+);
+$h4-fs24: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.3em,
+$screen-smartphone-xxs : 0.6em,
+$screen-smartphone-xs: 0.9em,
+$screen-smartphone : 1.2em,
+$screen-tablet : 1.5em,
+$screen-desktop: 1.5em,
+);
+$sub-fs: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.8em,
+$screen-smartphone-xxs : 0.8em,
+$screen-smartphone-xs: 0.95em,
+$screen-smartphone : 1em,
+$screen-tablet : 1.04em,
+$screen-desktop: 1.04em,
+);
+
+

@@ -1,0 +1,207 @@
+@media screen and (max-width: $screen-tablet) {
+    h1 {
+        @include rhythm-margins(2, 1);
+    }
+    .cd-bg-1 h1 {
+        @include rhythm-padding(2.3, 0);
+    }
+    nav[role="navigation"] {
+        padding-bottom: 16px;
+        //margin-bottom: 0;
+        .bar {
+            display: block;
+        }
+        li.navPhone, li.navGoogle {
+            display: none;
+        }
+        .inner-nav ul.menu {
+            display: none;
+        }        
+        ul.mobile {
+            display: block;
+            width: 100%;
+            margin-top: 1em;
+            padding-left: -1.5625em;
+            padding-right: -1.5625em;
+            li {
+                display: block;
+                position: relative;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid $color11;
+                margin: 0;
+                padding: 0;
+                //line-height: 2.5em;
+                a {
+                    line-height: 2.7em;
+                    display: block;
+                    //margin: 0 -1em;
+                    &:hover {
+                        border-bottom: none;
+                        //background-color: rgba($color8,0.5);
+                        background-color: $color11;
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+    .cd-color-2, .cd-color-3 {
+        .left {
+            @include span-columns(12,12);
+            //float: left;
+        }
+        .right {
+            @include rhythm-margins(0.5, 0.5);
+            @include span-columns(12,12);
+            //float: left;
+        }
+    }
+    .cd-color-2 {
+        .right {
+            h2, ul {
+                @include pre(0.5);
+                li {
+                    @include prefix(1,12);
+                    background-size: 1em auto;
+                }
+            }
+        }
+    }
+    .cd-color-3 {
+        ul.contact {
+
+        }
+        .row {
+            @include margin-trailer(0.5);
+        }
+        form {
+            /*            .row {
+                            .col {
+                                width: 31%;
+                            }
+                            .area {
+                                width: 100%;
+                            }
+                            .sub {
+                                position: static;
+                                width: auto;
+                                margin-right: 0;
+                                @include rhythm-margins(1, 1);
+                            }
+                        }*/
+            /*            .col, .sub {
+                            @include span-columns(3.7,12);
+                            input {
+                                width: 100%;
+                            }
+                        }
+                        .col {
+                            float: left;
+                        }
+                        .sub {
+                            float: right;
+                        }
+                        .area {
+                            @include span-columns(7.4,12);
+                            textarea {
+                                width: 100%;
+                            }
+                        }*/
+        }
+        .right {
+            border-left: none;
+            padding-left: 0;
+            .phone {
+                margin-top: 0;
+            }
+
+            #first, .hours {
+                margin-top: 2em;
+                float: left;
+            }
+            #first {
+                //float: left;
+                width: 45%;
+                margin-right: 5%; 
+                .phone, .address {
+                    //width: 100%;
+                    ul {
+                        width: 100%;
+                        li {
+                            text-align: left;
+                        }
+                    }
+
+                }
+            }
+            .hours {
+                width: 45%;
+                padding-left: 5%;
+                border-left: 1px solid #6b5554;
+            }
+        }
+    }
+    footer {
+        p {
+            font-size: 0.7em;
+        }
+    }
+
+}
+
+@media screen and (max-width: $screen-smartphone-xs) {
+    .cd-color-3 {
+        .left {
+            .row {
+                margin-bottom: 0;
+            }
+            form {                
+                .row:first-child {
+                    margin-bottom: 0;
+                }
+                .col {
+                    width: 100%;
+                    label {
+                        font-size: 0.75em;
+                        margin-bottom: 0.05em;
+                    }
+                    input {
+                        width: 100%;
+                        margin-bottom: 1em;
+                    }                
+                }
+                .sub {
+                    width: 100%;
+                    margin-right: 0;
+                    margin-top: 2em;
+                    position: static;
+                }                
+            }
+
+        }
+        .right {
+            .row {
+                margin-bottom: 0;
+            }
+            #first, .hours {
+                width: 100%;
+                .address {
+                    margin-top: 1em;
+                }
+            }            
+            .hours {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 1em;                
+            }
+        }
+
+    }
+
+    /*footer {
+            p {
+                font-size: 0.7em;
+            }
+        }*/
+}

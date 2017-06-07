@@ -1,0 +1,202 @@
+// ====================================================================
+// Layout styles, should only contain rules relating to the structure
+// ====================================================================
+@import "susy";
+@import "susyone";
+$total-columns : 12; // a 12-column grid
+$column-width : 4.6875em; // each column is 5em wide
+//$column-width : 5em; // each column is 5em wide
+$gutter-width : 1.5625em; // 1em gutters between columns
+//$gutter-width : 1em; // 1em gutters between columns
+$grid-padding : $gutter-width; // grid-padding equal to gutters
+
+$border-box-sizing: true;
+
+// Breakpoint variables
+// ==================================================================
+$M: 47em; // roughly speaking, around 800px wide with 16px body font
+$L: 75em; // roughly speaking, around 1200px wide with 16px body font
+
+$container-style: fluid;//робимо грід повністю еластичним
+$container-width: 100%;//ширина контейнера гріда 
+
+$container-width: 77em; //width first and last gutters
+
+* {
+    @include bs;
+}
+div.container {    
+    max-width: $container-width;
+    margin-left: auto;
+    margin-right: auto;    
+    min-height: 100%;
+}
+
+[class^="inner"] {
+    max-width: $container-width;    
+    margin: auto;    
+    @include container;
+    //@include susy-grid-background;
+}
+.cd-bg-1 {
+    p {
+        @include suffix(1,12);
+        //@include post(1);
+    }
+    .blockquote {
+        //@include pre(1);
+        //@include span-columns(8,12);
+        @include pad(0.99,4,12);
+    }
+    /*    p.blockquote:nth-child(2) {
+            margin-bottom: 60px;
+        }*/
+    .inside {          
+        //width: 100%;
+        //hight: 100%;
+        .line {
+            @include pre(0.99,12); 
+            //margin-left: 8.5%;
+        }
+        p.opinion1 {
+            @include pad(0.7,4.5,12);
+            //@include prefix(1,12);
+            //@include span-columns(8,12);
+            //margin-left: 25px;
+        }
+        p.opinion2 {
+            //width: 75%;
+            @include pad(0.7,2,12);
+            //@include span-columns(10,12);
+            //@include pre(-0.3);
+            //@include push(0.34);        
+        }
+    }
+}
+
+.cd-color-2 {
+    .left {
+        @include span-columns(8,12);
+        //float: left;
+    }
+    .right {
+        @include span-columns(4 omega,12);
+        //float: left;
+        h2, ul {
+            @include pre(1.6);
+        }
+        li {
+            @include prefix(1.5,12);
+        }
+    }
+}
+
+.cd-color-3 {
+    .left {
+        @include span-columns(7.9,12);
+        margin-right: 0;
+        //float: left;
+        form {
+            .col, .sub {
+                @include span-columns(3.7,12);
+                input {
+                    width: 100%;
+                }
+            }
+            .col {
+                float: left;
+            }
+            .sub {
+                float: right;
+            }
+            .area {
+                @include span-columns(7.4,12);
+                textarea {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+    .right {        
+        @include span-columns(4.005 omega,12);
+        //@include pre(0.8);
+        @include prefix(0.34,12);
+        //float: left;
+        .row {
+            //@include pre(0.8);
+        }
+        ul {
+            //@include pre(1.6);
+        }
+        li {
+            //@include prefix(1.5,12);
+        }
+    }
+}
+
+
+
+
+/*@include with-grid-settings(12,3em,0.5em,0) {
+    ul.contact, ul.menu {
+        //@include container;
+        //@include susy-grid-background;
+    }
+    ul.contact {
+        ul.navPhone {
+            //@include span-columns(3);
+            //@include prefix (1,12);
+            //@include nth-omega;
+        }
+        li:nth-last-child {
+            //@include span-columns(10 omega,12);
+        }
+
+    }
+    li.menu-link {
+        //@include span-columns(3);
+        //@include prefix (1,12);
+        //@include nth-omega; 
+        a, ul.lang  {
+            //float: right;
+            //text-align: right;
+        }
+    }
+}*/
+
+/*header[role="banner"],footer[role="contentinfo"] {
+    width: 100%;
+    display: block;
+
+}*/
+/*nav[role="navigation"] {
+    width: 25%;
+    float: left;
+    @include at-breakpoint($M) {
+        @include span-columns(3,12);
+    }
+}*/
+/*.main-content {
+    width: 70%;
+    float: right;
+    @include at-breakpoint($M) {
+        @include prefix(1,12);
+        @include span-columns(9 omega,12);
+    }
+}*/
+/*footer[role="contentinfo"] {
+    clear: both;
+}*/
+// Grid override for purchase links
+/*    @include with-grid-settings(24,3em,0.5em,0) {
+        .purchase-links-wrapper {
+            @include container;
+            @include susy-grid-background;
+        }
+        .purchase-link {
+            @include span-columns(6);
+            @include prefix (1,24);
+            @include nth-omega;
+        }
+    }*/

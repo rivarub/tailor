@@ -1,0 +1,470 @@
+//HEADER
+header img {
+    width: 100%;
+}
+//NAVIGATION
+nav[role="navigation"] {
+    @extend %clearfix;
+    z-index: 1000;
+    //height: 56px;
+    background-color: #ece3da; // light
+    //background-color: $color11;
+    //background-color: $color7;
+    //background-color: rgba((mix($color11,$color12,80%)),0.95);
+    //background-color: rgba((mix($color11,$color5,90%)),0.95);
+    padding: 0.625em 0;  
+    margin-bottom: 6px;
+    line-height: 1.5em;
+    position: relative;
+    .mobile {
+        display: none;
+    }
+    a {
+        border-bottom: none;
+        @include button-links($color6,$color4);
+        //@include button-links($color1,$color3);
+    }    
+    li {
+        display: inline-block;
+        float: left;
+        padding: 0 0.6em;
+        margin-left: 0.7em;
+    }
+    .bar {
+        @include centerer(true, false);
+        display: none; 
+    }
+    i.fa-bars {
+        //color: $color7;
+        color: $color6;
+        font-size: 35px;
+        //font-weight: 300;
+        //margin-top: $nav-top-mark;
+        //position: absolute;
+        //left: 49.1%;
+
+    }
+    ul.contact {
+        float: left;
+        li:first-child {
+            margin-left: 0;
+            padding-left: 0;
+            //padding-right: 0;            
+        }        
+        li {            
+            ul.navPhone {                
+                color: $color4;                
+                margin-left: 0;
+                padding-left: 0;
+                li {
+                    display: block;
+                    float: none;
+                    margin-left: 0;
+                    padding-left: 0;
+                    font-size: 0.9375em;
+                    line-height: 1.2em;
+                }                
+            }
+        }
+        li.navPhone {
+            margin-left: 0;
+            padding-left: 0;
+            padding-right: 0;            
+        }
+        i.fa-phone {
+            color: $color7;
+            font-size: 20px;
+            margin-top: $nav-top-mark;
+            transform: rotate(30deg);
+            //display: none;
+        }
+        i.fa-map-marker {
+            color: $color7;
+            font-size: 20px;
+            margin-top: $nav-top-mark;            
+        }
+        li.navGoogle {
+            margin-left: 0;
+            padding-left: 0;
+            margin-top: $nav-top;
+        }
+        a.marker:hover {
+            border-bottom: none;
+
+            i.fa-map-marker {
+                color: $color8;
+            }
+        }
+        a.navGoogle {
+            border-bottom: 1px dotted;
+            font-size: 0.8125em;
+            //margin-left: 0;
+            &:hover {
+                //border-bottom: 2px solid;
+                border-bottom: none;
+                color: $color8;
+            }
+        }   
+    }           
+    ul.menu {
+        float: right;
+        text-transform: uppercase;
+        //font-size: $p;
+        @include font-size($ul-menu);
+        font-weight: bold; 
+        letter-spacing: 0.08em;
+        margin-top: $nav-top;
+        /*        li {
+                    margin-left: 0;
+                }        */
+        li:last-child {
+            //padding-right: 0;
+        }
+        /*        ul.lang {
+                    //margin-left: 0;
+                    li {
+                        margin-left: 0;
+                        padding: 0;
+                    }
+                    li:nth-child(2) {
+                        padding: 0 0.3em;
+                    }
+                    li:last-child {
+                        //margin-left: 0;
+                        //padding-right: 0;
+                        a {
+                            //margin-left: 0;
+                            //padding-right: 0;
+                        }                
+                    }
+                    li.selected a {
+                        color: $color8;
+                        //border-bottom: 3px solid;
+                    }
+                                li.unselected {
+                                    a {
+                                        color: $color8;
+                                    }
+                                }
+                }        */
+    }
+    ul.lang {
+        //margin-left: 0;
+        float: right;
+        text-transform: uppercase;
+        font-size: $p;
+        letter-spacing: 0.08em;
+        margin-top: $nav-top;
+        margin-left: 1.3em;
+        li {
+            margin-left: 0;
+            padding: 0;
+        }
+        li:nth-child(2) {
+            padding: 0 0.3em;
+        }
+        li:last-child {
+            //margin-left: 0;
+            //padding-right: 0;
+            a {
+                //margin-left: 0;
+                //padding-right: 0;
+            }                
+        }
+        li.selected a {
+            color: $color8;
+            //color: $color1;
+            //border-bottom: 3px solid;
+        }
+        /*            li.unselected {
+                        a {
+                            color: $color8;
+                        }
+                    }*/
+    }
+}
+.nav-bottom, .nav-top {
+    display: none;
+    height: 6px;
+    width: 100%;
+    background-color: $color11;
+    z-index: 1001;
+}
+/*@import "compass/utilities/general/clearfix";*/
+//ABOUT US
+// Fixed Background Scrolling
+.cd-fixed-bg {
+    //min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;    
+}
+
+.cd-fixed-bg.cd-bg-1 {
+    background-image: url("../img/tailor1.jpg");   
+    //background-size: 80px 60px;
+    background-position: 50% top;
+    //background-color: #ffffff;
+    //border: 1px solid black;
+    //opacity: 0.6;
+    //filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.cd-bg-1 {
+    h1, h2, p {
+        color: $color1;
+    }
+    h1 {
+        @include rhythm-padding(3.35, 0.2);
+        margin: 0;
+    }
+    .container {
+        background-color: rgba($color7,.2);
+        //filter: alpha(opacity=60); // For IE8 and earlier 
+    }      
+    .inside {
+        //clear: left;
+        //width: 100%;
+        //@extend %clearfix;
+        @include rhythm-padding(1.48, 1);
+        @include rhythm-margins(2, 2.5);
+        //padding-top: 35px;
+        //padding-bottom: 35px;
+        background-color: rgba($color5,.5);
+        h2 {
+            //margin-bottom: 40px;
+            @include margin-trailer(1.7);            
+        }
+        .line {
+            border-left: 1px solid $color1;
+        }
+
+        span {
+            font-family: Roboto;
+            //font-size: $p;
+        }
+        p.opinion1 {
+            font-family: 'Homemade Apple', cursive;
+            letter-spacing: 0.05em;
+            //font-family: 'Caveat', cursive;
+        }
+        p.opinion2 {
+            font-family: 'Calligraffitti', cursive;
+            //font-size: 1.375em;
+            @include font-size($h2);
+            letter-spacing: 0;
+            span {
+                font-size: 0.85em;
+            }
+            //clear: left;
+        }
+        p:first-child {
+            margin-top: 0;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }    
+}
+
+/*Block Serveses + Gallery*/
+
+.cd-color-2 {
+    ul {        
+        //font-size: $ul;
+        @include font-size($ul-services);
+        color: $color5;
+        line-height: $lh-ul;
+        li {
+            background-image: url('../img/gudzyk.png');
+            //background-size: $p;
+            background-size: 10%;            
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+            letter-spacing: 0.06em;
+            //padding-left: 50px;
+        }
+    }
+
+}
+
+.cd-color-2, .cd-color-3 {
+    h1 {
+        text-align: center;
+        color: $color6;
+        line-height: $lh-h1;
+    }
+    .gold {
+        color: $color8;
+    }
+    .right {
+        border-left: 1px solid $color4;
+    }
+    ul {        
+        //font-size: $ul;
+        color: $color5;
+        //line-height: $lh-ul;
+        //list-style-image: url('../img/gudzyk1.png');
+        //list-style-position: inside;
+        list-style: none;
+        li {
+            //background-image: url('../img/gudzyk.png');
+            //background-size: $p;
+            //background-repeat: no-repeat;
+            //background-position: 0 50%;
+            //letter-spacing: 0.06em;
+            //padding-left: 50px;
+        }
+    }
+    p:last-child {
+        @include margin-trailer(0);
+    }
+    .photos {
+        //@include container;
+        //@include susy-grid-background;
+        background-color: $color9;
+        //margin-bottom: gutter(12);
+        @include clearfix;
+        @include margin-leader(2);
+        padding: gutter(20);//top, bottom
+        .photo {
+            //margin-bottom: gutter(12);
+            @include gallery(3 of 15);
+        }
+    }
+}
+
+.cd-color-3 {
+    form {
+        //background-color: $color6;
+        label {
+            display: block;
+            margin-bottom: 0.75em;
+            color: $color8;
+            font-size: $p;
+            letter-spacing: 0.15em;
+            //font-weight: lighter;
+            font-weight: 300;
+        }
+        input {
+            line-height: 2em;
+            padding: 0 0.5em;
+            color: $color5;
+            font-size: 1em;
+        }
+        textarea {
+            line-height: 2em;
+            padding: 0 0.5em;
+            color: $color5;
+        }
+        input, textarea {
+            border: 1px solid $color8;
+        }
+        .row {
+            width: 100%;            
+            @include clearfix;
+            position: relative;
+            //z-index: -1000;            
+        }        
+        .col {
+            //float: right;
+        }
+        .sub {            
+            position: absolute;
+            bottom: 0;
+            //right: 0;
+            input[type="submit"] {
+                //@include button-links($color11,$color12);
+                border-radius: 0;
+                border: none;
+                background-color: $color12;
+                color: $color1;
+                line-height: 3.5em;
+                //padding-top: 1px;
+                text-transform: uppercase;
+                font-weight: bold;
+                @include font-size($sub-fs);
+                letter-spacing: 0.15em;
+                &:hover {
+                    background-color: $color11;
+                }
+
+            }
+        }
+    }
+    .right {
+        .row {
+            @include clearfix;
+            //margin-left: 25px;
+        }
+        h3 {
+            float: left;
+        }
+        ul {   
+            float: right;
+            li { 
+                text-align: right;
+                letter-spacing: 0.07em;
+            }
+        }        
+        .phone, .address {
+            ul {
+                width: 65%;
+            }
+        }
+        .address ul li {
+            text-align: right;
+        }
+        .hours {
+            ul {
+                float: left;
+                width: 100%;
+                li {
+                    line-height: 1.8em;
+                    @include clearfix;
+                    span.day {
+                        float: left;
+                        //width: 50%;
+                        text-align: left;
+                        display: inline-block;
+                    }
+                    span.time {
+                        float: right;
+                        font-size: 1em;
+                        text-align: right;
+                        display: inline-block;
+                    } 
+                }
+            } 
+        }
+    }
+}
+
+div.googlemap {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;    
+    iframe {
+        width: 100%;        
+    }
+}
+footer {
+    background-color: $color11;    
+    text-align: center;
+    p {
+        color: $color1;
+        line-height: 3em;
+        margin: 0;
+        font-style: normal;
+    }
+    a {
+        color: $color3;
+        border-bottom: 1px solid;
+        font-style: italic;
+        &:hover {
+            //border-bottom: 2px solid;
+            border-bottom: none;
+            color: $color2;
+        }
+    }
+}

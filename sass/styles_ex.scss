@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 лют 2017, 18:09:17
+    Author     : Irusya
+*/
+@import "compass";
+//@import "susy";
+//@import "susyone";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/fonts";
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/placeholders";
+@import "partials/layout";
+@import "partials/modules";
+
+body, html, main {
+    /* important */
+    height: 100%;
+    font-family: "SansationRegular";
+    // Modernizr fallback for when there is no fontface support
+    .no-fontface & {
+    	font-family: "Verdana"; //when not support fontface
+    }
+}
+// Fixed Background Scrolling
+.cd-fixed-bg {
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;    
+}
+div[class$="filter"]  {
+    position: absolute;
+    width: 100%;
+    //z-index: -1;
+    min-height: 100%;
+    //margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+div.googlemap {
+    iframe {
+        width: 100%;
+    }
+}
+
+.cd-fixed-bg.cd-bg-1 {
+    background-image: url("../img/cd-background-1.jpg");   
+    //background-size: 80px 60px;
+    background-position: 50% 90%;
+    //background-color: #ffffff;
+    //border: 1px solid black;
+    //opacity: 0.6;
+    //filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.cd-fixed-bg.cd-bg-2 {
+    background-image: url("../img/cd-background-2.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+    background-image: url("../img/cd-background-3.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+    background-image: url("../img/cd-background-4.jpg");
+}
+
+.cd-scrolling-bg {
+    min-height: 100%;        
+}
+[class$="cd-container"] {
+    width: 80%;
+    //max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+//end Fixed Background Scrolling
+
+//W3SCHOOL opacity-filtr
+div.background {
+    background: url("../img/cd-background-3.jpg") no-repeat;
+    border: 2px solid black;
+}
+
+div.transbox {        
+    min-height: 100%;
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}

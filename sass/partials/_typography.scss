@@ -1,0 +1,194 @@
+/* 
+    Created on : 15 січ 2017, 17:16:43
+    Author     : Irusya
+*/
+@import "compass/typography";
+@import "compass/css3";
+
+$base-font-size: 16px !global;
+$base-line-height: 24px !global;
+$rhythm-unit: "px" !global;
+$rem-with-px-fallback: true !global;
+@include establish-baseline;
+
+/*h1 {
+    @include rhythm-margins(1.5, 1);
+}*/
+P {
+    @include rhythm-margins(1.4, 1.4);
+}
+
+.cd-color-2, .cd-color-3 {
+    .left {
+        p:first-child {
+            margin-top: 0;
+        }
+    }
+    .right {
+        h2 {
+            line-height: $lh-base;
+            @include rhythm-margins(0, 0.5);
+        }
+
+    }
+}
+
+.cd-color-3 {    
+    form {
+        .row {
+            margin-bottom: 2em;
+        }
+    }
+    .right {
+        .row {
+            @include margin-trailer(1);
+        }
+        .phone {
+            @include margin-leader(0.3);
+        }
+        h3 {
+            line-height: $lh-ul-contact;
+            @include rhythm-margins(0, 0.5);  
+        }
+        li {
+            //font-size: $p;
+            @include font-size($p-font-sizes);
+            line-height: $lh-ul-contact; 
+        }        
+        span.time {
+            //float: right;
+            font-size: 1em;
+        }
+    }
+    .row:last-child {
+        @include margin-trailer(0);
+    }
+    .googlemap {
+        @include margin-leader(2.125);
+    }
+}
+
+// Sa_laro
+/*$base-font-size: 16px !global;
+$base-line-height: 24px !global;
+$rhythm-unit: "rem" !global;
+$rem-with-px-fallback: true !global;
+@include establish-baseline;
+
+div, hgroup, [class*="columnForm_margin_trailer"] {
+    @include margin-trailer(0.35); //додає вказану кількість рядків знизу
+}
+div[class^="full_margin_right"], div[class^="full_margin_right_right"] {
+    @include margin-trailer(0);
+    //background-color: rosybrown;
+}
+div.pt, div.columnForm, div.small_yes_no {
+    @include margin-trailer(0);
+}
+h1,h2,h3,h4,h5,h6,p {
+    //@include margin-trailer; //додає вказану кількість рядків знизу    
+    @include rhythm-margins(1.5, 1);
+}
+[class$="partial"] {        
+    @include margin-leader(0.8);
+    //background-color: yellowgreen;
+}
+.full_partial {
+    @include rhythm-margins(1.3, 0);
+    //background-color: yellow;
+}
+
+:not(form) {
+    h1,h2,h3,h4,h5,h6 {
+        margin-bottom: 0.2em;       
+    }
+    p {
+        margin-top: 0;
+        //margin-bottom: 1.5em;
+        //text-indent: 2.5em;         
+    }
+        p::first-line {
+        background-color: yellow;
+    }
+}
+p.indent {
+    text-indent: 2.5em;
+}
+body {
+    font-family: Cabin,Arial,"Arial Unicode MS",Helvetica,sans-serif;
+}
+.quick {    
+    font-family: $font-sherif;
+    font-size: $serif-base;    
+}
+h1 { @include adjust-font-size-to(1.602rem);} //використовуємо для підбору співвідношення шрифтів з базовим type-scale.com
+h2 { @include adjust-font-size-to(1.424rem);}
+h3 { @include adjust-font-size-to(1.266rem);}
+h4 { @include adjust-font-size-to(1.125rem);}
+h5 { @include adjust-font-size-to(1rem);}
+h6 { @include adjust-font-size-to(0.889rem);}
+
+h1,h2,h3,h4,h5,h6 {
+    background: rgba($color2,.5);
+}
+div {
+    background: rgba($color3,.2);
+}
+p {
+    background: rgba($color4,.5);
+}
+h1,h2,h3,h4,h5,h6 {    
+    text-align: center;
+    color: $color2;
+    line-height: $Lh2;
+}
+legend {
+    font-weight: bold;
+    //font-size: 1em;
+    line-height: 2em;
+    padding-right: 1em;    
+    strong {
+        //font-size: 1em;
+    }
+}
+.lager_legend {
+    font-weight: normal;
+    font-size: $p_larger;
+}
+.legend_light {
+    font-weight: normal;
+}
+[class*="bold"] {
+    font-weight: bold;
+}
+fieldset {
+    [class*="larger"] {
+        font-size: $p_larger;        
+    }    
+}
+[class*="underline"] {
+    text-decoration: underline; 
+}
+label[class*="italic"] {
+    font-style: italic;
+}
+span.index {
+    font-size: 75%;
+    vertical-align: sub;
+}
+.invisible {
+    color: white;
+}
+.marg_rhythm {
+    clear: both;
+    width: 100%;
+    //margin-top: 3em;
+    //margin-bottom: 3em;
+    //background-color: buttontext;
+}
+#DIAGNOSTIC_SCREENING {
+    hgroup {
+        font-variant: small-caps;        
+    }
+}*/
+
