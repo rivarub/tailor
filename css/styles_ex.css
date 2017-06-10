@@ -1129,7 +1129,6 @@ nav[role="navigation"] ul.lang li.selected a {
 
 /* line 292, ../sass/partials/_modules.scss */
 .cd-color-2 h1, .cd-color-3 h1 {
-  text-align: center;
   color: #484047;
   line-height: 1.7em;
 }
