@@ -167,10 +167,10 @@
         .inside {          
             //width: 100%;
             //hight: 100%;
-/*            .line {
-                @include pre(0.99,12); 
-                //margin-left: 8.5%;
-            }*/
+            /*            .line {
+                            @include pre(0.99,12); 
+                            //margin-left: 8.5%;
+                        }*/
             p.opinion1 {
                 @include pad(0.7,0,12);
                 //@include prefix(1,12);
@@ -185,6 +185,33 @@
                 //@include push(0.34);        
             }
         }
+    }
+    .cd-color-2 {
+        .photos {
+            //@include container;
+            //@include susy-grid-background;
+            background-color: $color9;
+            //margin-bottom: gutter(12);
+            @include clearfix;
+            @include margin-leader(2);
+            padding: gutter(20);//top, bottom
+            .photo {
+                //@include span-columns(12,12);
+                //margin-bottom: gutter(12);
+                //@include gallery(15 of 15);
+                width: 100%;
+                padding: 3px;
+                //float: none;
+            }
+/*            .photo:nth-child(5n+1) {
+                margin-left: 0;
+                margin-right: 0;
+            }*/
+            .photo:nth-child(1n+0) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }    
     }
     .cd-color-3 {
         .left {
