@@ -580,8 +580,8 @@ h1 {
   letter-spacing: 0.12em;
   text-align: center;
   font-weight: 600;
-  margin-top: 84px;
-  margin-bottom: 45px;
+  padding-top: 84px;
+  padding-bottom: 45px;
 }
 @media screen and (min-width: 200px) {
   /* line 23, ../sass/partials/_base.scss */
@@ -619,48 +619,48 @@ h1 {
     font-size: 2.5em;
   }
 }
-/* line 33, ../sass/partials/_base.scss */
+/* line 34, ../sass/partials/_base.scss */
 h1 span.gold {
   font-size: 0.1em;
 }
 @media screen and (min-width: 200px) {
-  /* line 33, ../sass/partials/_base.scss */
+  /* line 34, ../sass/partials/_base.scss */
   h1 span.gold {
     font-size: 0.5em;
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 33, ../sass/partials/_base.scss */
+  /* line 34, ../sass/partials/_base.scss */
   h1 span.gold {
     font-size: 0.55em;
   }
 }
 @media screen and (min-width: 540px) {
-  /* line 33, ../sass/partials/_base.scss */
+  /* line 34, ../sass/partials/_base.scss */
   h1 span.gold {
     font-size: 0.6em;
   }
 }
 @media screen and (min-width: 767px) {
-  /* line 33, ../sass/partials/_base.scss */
+  /* line 34, ../sass/partials/_base.scss */
   h1 span.gold {
     font-size: 0.8em;
   }
 }
 @media screen and (min-width: 991px) {
-  /* line 33, ../sass/partials/_base.scss */
+  /* line 34, ../sass/partials/_base.scss */
   h1 span.gold {
     font-size: 0.9em;
   }
 }
 @media screen and (min-width: 1299px) {
-  /* line 33, ../sass/partials/_base.scss */
+  /* line 34, ../sass/partials/_base.scss */
   h1 span.gold {
     font-size: 1em;
   }
 }
 
-/* line 38, ../sass/partials/_base.scss */
+/* line 39, ../sass/partials/_base.scss */
 h2 {
   font-size: 0.1em;
   font-weight: 500;
@@ -668,86 +668,86 @@ h2 {
   margin: 0;
 }
 @media screen and (min-width: 200px) {
-  /* line 38, ../sass/partials/_base.scss */
+  /* line 39, ../sass/partials/_base.scss */
   h2 {
     font-size: 0.9em;
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 38, ../sass/partials/_base.scss */
+  /* line 39, ../sass/partials/_base.scss */
   h2 {
     font-size: 0.95em;
   }
 }
 @media screen and (min-width: 540px) {
-  /* line 38, ../sass/partials/_base.scss */
+  /* line 39, ../sass/partials/_base.scss */
   h2 {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 767px) {
-  /* line 38, ../sass/partials/_base.scss */
+  /* line 39, ../sass/partials/_base.scss */
   h2 {
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 991px) {
-  /* line 38, ../sass/partials/_base.scss */
+  /* line 39, ../sass/partials/_base.scss */
   h2 {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1299px) {
-  /* line 38, ../sass/partials/_base.scss */
+  /* line 39, ../sass/partials/_base.scss */
   h2 {
     font-size: 1.375em;
   }
 }
 
-/* line 46, ../sass/partials/_base.scss */
+/* line 47, ../sass/partials/_base.scss */
 h3 {
   font-size: 0.1em;
   font-weight: 300;
   letter-spacing: 0.15em;
 }
 @media screen and (min-width: 200px) {
-  /* line 46, ../sass/partials/_base.scss */
+  /* line 47, ../sass/partials/_base.scss */
   h3 {
     font-size: 0.75em;
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 46, ../sass/partials/_base.scss */
+  /* line 47, ../sass/partials/_base.scss */
   h3 {
     font-size: 0.9em;
   }
 }
 @media screen and (min-width: 540px) {
-  /* line 46, ../sass/partials/_base.scss */
+  /* line 47, ../sass/partials/_base.scss */
   h3 {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 767px) {
-  /* line 46, ../sass/partials/_base.scss */
+  /* line 47, ../sass/partials/_base.scss */
   h3 {
     font-size: 1.05em;
   }
 }
 @media screen and (min-width: 991px) {
-  /* line 46, ../sass/partials/_base.scss */
+  /* line 47, ../sass/partials/_base.scss */
   h3 {
     font-size: 1.12em;
   }
 }
 @media screen and (min-width: 1299px) {
-  /* line 46, ../sass/partials/_base.scss */
+  /* line 47, ../sass/partials/_base.scss */
   h3 {
     font-size: 1.125em;
   }
 }
 
-/* line 54, ../sass/partials/_base.scss */
+/* line 55, ../sass/partials/_base.scss */
 p, blockquote {
   font-style: italic;
   font-size: 0.1em;
@@ -756,43 +756,43 @@ p, blockquote {
   color: #6b5554;
 }
 @media screen and (min-width: 200px) {
-  /* line 54, ../sass/partials/_base.scss */
+  /* line 55, ../sass/partials/_base.scss */
   p, blockquote {
     font-size: 0.75em;
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 54, ../sass/partials/_base.scss */
+  /* line 55, ../sass/partials/_base.scss */
   p, blockquote {
     font-size: 0.8em;
   }
 }
 @media screen and (min-width: 540px) {
-  /* line 54, ../sass/partials/_base.scss */
+  /* line 55, ../sass/partials/_base.scss */
   p, blockquote {
     font-size: 0.95em;
   }
 }
 @media screen and (min-width: 767px) {
-  /* line 54, ../sass/partials/_base.scss */
+  /* line 55, ../sass/partials/_base.scss */
   p, blockquote {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 991px) {
-  /* line 54, ../sass/partials/_base.scss */
+  /* line 55, ../sass/partials/_base.scss */
   p, blockquote {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 1299px) {
-  /* line 54, ../sass/partials/_base.scss */
+  /* line 55, ../sass/partials/_base.scss */
   p, blockquote {
     font-size: 1em;
   }
 }
 
-/* line 63, ../sass/partials/_base.scss */
+/* line 64, ../sass/partials/_base.scss */
 span.letter {
   font-size: 2.25em;
   font-family: 'Parisienne', cursive;
