@@ -151,7 +151,9 @@
 }
 
 @media screen and (max-width: $screen-smartphone-xs) {
-    .cd-bg-1 {
+    .cd-fixed-bg.cd-bg-1 {        
+        background-image: url("../img/tailor1_mobile.jpg");
+        //background-color: #90350c;
         p {
             @include suffix(0,12);
             //@include post(1);
