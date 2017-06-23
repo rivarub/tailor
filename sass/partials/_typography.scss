@@ -14,18 +14,18 @@ $rem-with-px-fallback: true !global;
 /*h1 {
     @include rhythm-margins(1.5, 1);
 }*/
-P {
+P.rul {
     @include rhythm-margins(1.4, 1.4);
 }
 
 .cd-color-2, .cd-color-3 {
     .left {
-        p:first-child {
+        p.rul:first-child {
             margin-top: 0;
         }
     }
     .right {
-        h2 {
+        h2.rul {
             line-height: $lh-base;
             @include rhythm-margins(0, 0.5);
         }
@@ -35,18 +35,18 @@ P {
 
 .cd-color-3 {    
     form {
-        .row {
+        .part {
             margin-bottom: 2em;
         }
     }
     .right {
-        .row {
+        .part {
             @include margin-trailer(1);
         }
         .phone {
             @include margin-leader(0.3);
         }
-        h3 {
+        h3.rul {
             line-height: $lh-ul-contact;
             @include rhythm-margins(0, 0.5);  
         }

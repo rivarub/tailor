@@ -68,7 +68,7 @@ body, html, main {
 }
 
 .cd-bg-1 {
-    h1 {
+    h1.rul {
         opacity: 0;
         -webkit-animation-name: fadeIn;
         -webkit-animation-delay: 0s;
@@ -95,7 +95,7 @@ body, html, main {
         animation-timing-function: linear;
         animation-fill-mode: forwards;
     }
-    P {
+    p.rul {
         opacity: 0;
         animation-name: fadeIn;
         animation-delay: 1s; // interval before start

@@ -39,7 +39,7 @@ div.container {
     //@include susy-grid-background;
 }
 .cd-bg-1 {
-    p {
+    p.rul {
         @include suffix(1,12);
         //@include post(1);
     }
@@ -82,7 +82,7 @@ div.container {
     .right {
         @include span-columns(4 omega,12);
         //float: left;
-        h2, ul {
+        h2.rul, ul {
             @include pre(1.6);
         }
         li {
@@ -123,7 +123,7 @@ div.container {
         //@include pre(0.8);
         @include prefix(0.34,12);
         //float: left;
-        .row {
+        .part {
             //@include pre(0.8);
         }
         ul {

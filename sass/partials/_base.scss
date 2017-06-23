@@ -15,12 +15,12 @@ ul,li {
     padding: 0;
 }
 
-h1, h2, h3 {
+h1.rul, h2.rul, h3.rul {
     text-transform: uppercase;
-    font-style: normal!important;
+    font-style: normal;
 }
 
-h1 {
+h1.rul {
     //font-size: $h1;
     @include font-size($h1);
     line-height: 1.3em;
@@ -36,7 +36,7 @@ h1 {
     }
 }
 
-h2 {
+h2.rul {
     @include font-size($h2);
     //font-size: $h2;
     font-weight: 500;
@@ -44,7 +44,7 @@ h2 {
     margin: 0;
 }
 
-h3 {
+h3.rul {
     @include font-size($h3);
     //font-size: $p;
     //font-weight: lighter;
@@ -52,7 +52,7 @@ h3 {
     //letter-spacing: 0.07em;
     letter-spacing: 0.15em;
 }
-p, blockquote {
+p.rul, blockquote {
     font-style: italic;
     //font-size: $p;
     @include font-size($p-font-sizes);

@@ -1,8 +1,8 @@
 @media screen and (max-width: $screen-tablet) {
-    h1 {
-        @include rhythm-margins(2, 1);
+    h1.rul {
+        //@include rhythm-margins(2, 1); //завеликі відступи прибрала коли робила слайдер.
     }
-    .cd-bg-1 h1 {
+    .cd-bg-1 h1.rul {
         @include rhythm-padding(2.3, 0);
     }
     nav[role="navigation"] {
@@ -59,7 +59,7 @@
     }
     .cd-color-2 {
         .right {
-            h2, ul {
+            h2.rul, ul {
                 @include pre(0.5);
                 li {
                     @include prefix(1,12);
@@ -67,16 +67,36 @@
                 }
             }
         }
+        .photos {
+            display: none;
+        }
+        .slideshow-container {
+            display: block;
+            background-color: #866845;
+            .mySlides {
+                width: 40%;
+                min-width: 350px;
+                margin: auto;
+                padding-top: 7px;
+                .text {
+                    width: 40%;
+                    min-width: 350px;
+                }
+            }
+        }
+        .slidePanel {
+            display: block;
+        }
     }
     .cd-color-3 {
         ul.contact {
 
         }
-        .row {
+        .part {
             @include margin-trailer(0.5);
         }
         form {
-            /*            .row {
+            /*            .part {
                             .col {
                                 width: 31%;
                             }
@@ -143,7 +163,7 @@
         }
     }
     footer {
-        p {
+        p.rul {
             font-size: 0.7em;
         }
     }
@@ -151,10 +171,14 @@
 }
 
 @media screen and (max-width: $screen-smartphone-xs) {
+    h1.rul {
+    
+    @include rhythm-padding(2.7, 0);    
+}
     .cd-fixed-bg.cd-bg-1 {        
         background-image: url("../img/tailor1_mobile.jpg");
         //background-color: #90350c;
-        p {
+        p.rul {
             @include suffix(0,12);
             //@include post(1);
         }
@@ -189,7 +213,8 @@
         }
     }
     .cd-color-2 {
-        .photos {
+/*        .photos {
+            display: none;
             //@include container;
             //@include susy-grid-background;
             background-color: $color9;
@@ -205,19 +230,61 @@
                 padding: 3px;
                 //float: none;
             }
-/*            .photo:nth-child(5n+1) {
-                margin-left: 0;
-                margin-right: 0;
-            }*/
+                        .photo:nth-child(5n+1) {
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
             .photo:nth-child(1n+0) {
                 margin-left: 0;
                 margin-right: 0;
             }
-        }    
+        }*/
+        //My first carousel
+        .slideshow-container {
+            //display: block;
+            background-color: #ffffff;
+            .mySlides {
+                width: 100%;
+                min-width: 100%;
+                //margin: auto;
+                //padding: 0;
+                .text {
+                    width: 100%;
+                    min-width: 100%;
+                }
+            }
+        }
+        .slidePanel {
+            //display: block;
+        }
+        //end My first carousel
+/*        #myCarousel {
+            display: block;
+                        .left carousel-control {
+                            .glyphicon-batton-left {
+                                left: 5%;
+                            }
+                        }
+            .carousel-control {
+                //background-image: none;
+                .glyphicon-myCarousel-right::before {
+                    content: "";                    
+                }
+                span.glyphicon-myCarousel-right {
+                    right: 5%;
+                    margin-right: -10px;
+                    display: inline-block;
+                    margin-top: -10px;
+                    position: absolute;
+                    top: 50%;
+                    z-index: 5;
+                }                
+            } 
+        }*/
     }
     .cd-color-3 {
         .left {
-            .row {
+            .part {
                 margin-bottom: 0;
             }
             form {                
@@ -245,7 +312,7 @@
 
         }
         .right {
-            .row {
+            .part {
                 margin-bottom: 0;
             }
             #first, .hours {
