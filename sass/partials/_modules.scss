@@ -16,7 +16,7 @@ nav[role="navigation"] {
     margin-bottom: 6px;
     line-height: 1.5em;
     position: relative;
-    .mobile {
+    .mobile, .mobile_navPhone {
         display: none;
     }
     a {
@@ -71,17 +71,14 @@ nav[role="navigation"] {
             padding-left: 0;
             padding-right: 0;            
         }
-        i.fa-phone {
-            color: $color7;
-            font-size: 20px;
-            margin-top: $nav-top-mark;
-            transform: rotate(30deg);
-            //display: none;
-        }
-        i.fa-map-marker {
+        i.fa-phone, i.fa-map-marker {
             color: $color7;
             font-size: 20px;
             margin-top: $nav-top-mark;            
+            //display: none;
+        }
+        i.fa-phone {
+            //transform: rotate(15deg);            
         }
         li.navGoogle {
             margin-left: 0;
@@ -91,7 +88,7 @@ nav[role="navigation"] {
         a.marker:hover {
             border-bottom: none;
 
-            i.fa-map-marker {
+            i.fa-map-marker  {
                 color: $color8;
             }
         }
@@ -291,8 +288,7 @@ nav[role="navigation"] {
     /*    #myCarousel {
             display: none;
         }*/
-
-
+    
     /* Slideshow container */
     .slideshow-container {
         display: none;
@@ -364,7 +360,7 @@ nav[role="navigation"] {
         margin-top: -10px;
         display: none;
     }
-    
+
     .dot {
         cursor:pointer;
         height: 13px;
@@ -439,9 +435,26 @@ nav[role="navigation"] {
         @include clearfix;
         @include margin-leader(2);
         padding: gutter(20);//top, bottom
+        //position: relative;
         .photo {
             //margin-bottom: gutter(12);
             @include gallery(3 of 15);
+            border-bottom: none;
+/*            img {
+                width: 100%;
+            }
+            &:hover {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                transition-duration: .5s;
+                //padding: 20px;
+                //background-color: yellowgreen;
+                //overflow: hidden;
+                //position: absolute;
+            }*/
         }
     }
 }

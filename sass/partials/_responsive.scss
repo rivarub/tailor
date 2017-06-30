@@ -16,7 +16,7 @@
         }
         .inner-nav ul.menu {
             display: none;
-        }        
+        }                
         ul.mobile {
             display: block;
             width: 100%;
@@ -43,6 +43,34 @@
                         color: $color1;
                     }
                 }
+            }
+        }
+        ul.mobile_navPhone {
+            //display: block;
+            width: 100%;
+            margin-top: 1em;
+            padding-left: -1.5625em;
+            padding-right: -1.5625em;
+            li {
+                display: block;
+                position: relative;
+                width: 100%;
+                text-align: left;
+                border-bottom: 1px solid $color11;
+                margin: 0;
+                padding: 10px 0;
+                //line-height: 2.5em;
+                /*                a {
+                                    line-height: 2.7em;
+                                    display: block;
+                                    //margin: 0 -1em;
+                                    &:hover {
+                                        border-bottom: none;
+                                        //background-color: rgba($color8,0.5);
+                                        background-color: $color11;
+                                        color: $color1;
+                                    }
+                                }*/
             }
         }
     }
@@ -172,9 +200,24 @@
 
 @media screen and (max-width: $screen-smartphone-xs) {
     h1.rul {
-    
-    @include rhythm-padding(2.7, 0);    
-}
+
+        @include rhythm-padding(2.7, 0);    
+    }
+    nav[role="navigation"] {        
+        ul.contact {
+            i.fa-phone, i.fa-map-marker {
+                font-size: 23px;
+            }
+/*            a.marker:hover {           
+                i.fa-phone {
+                    color: $color8;
+                }
+            }*/
+            ul.lang {
+                font-size: 1.1em;
+            }
+        }
+    }
     .cd-fixed-bg.cd-bg-1 {        
         background-image: url("../img/tailor1_mobile.jpg");
         //background-color: #90350c;
@@ -213,32 +256,32 @@
         }
     }
     .cd-color-2 {
-/*        .photos {
-            display: none;
-            //@include container;
-            //@include susy-grid-background;
-            background-color: $color9;
-            //margin-bottom: gutter(12);
-            @include clearfix;
-            @include margin-leader(2);
-            padding: gutter(20);//top, bottom
-            .photo {
-                //@include span-columns(12,12);
-                //margin-bottom: gutter(12);
-                //@include gallery(15 of 15);
-                width: 100%;
-                padding: 3px;
-                //float: none;
-            }
-                        .photo:nth-child(5n+1) {
-                            margin-left: 0;
-                            margin-right: 0;
-                        }
-            .photo:nth-child(1n+0) {
-                margin-left: 0;
-                margin-right: 0;
-            }
-        }*/
+        /*        .photos {
+                    display: none;
+                    //@include container;
+                    //@include susy-grid-background;
+                    background-color: $color9;
+                    //margin-bottom: gutter(12);
+                    @include clearfix;
+                    @include margin-leader(2);
+                    padding: gutter(20);//top, bottom
+                    .photo {
+                        //@include span-columns(12,12);
+                        //margin-bottom: gutter(12);
+                        //@include gallery(15 of 15);
+                        width: 100%;
+                        padding: 3px;
+                        //float: none;
+                    }
+                                .photo:nth-child(5n+1) {
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                }
+                    .photo:nth-child(1n+0) {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }*/
         //My first carousel
         .slideshow-container {
             //display: block;
@@ -258,29 +301,29 @@
             //display: block;
         }
         //end My first carousel
-/*        #myCarousel {
-            display: block;
-                        .left carousel-control {
-                            .glyphicon-batton-left {
-                                left: 5%;
-                            }
+        /*        #myCarousel {
+                    display: block;
+                                .left carousel-control {
+                                    .glyphicon-batton-left {
+                                        left: 5%;
+                                    }
+                                }
+                    .carousel-control {
+                        //background-image: none;
+                        .glyphicon-myCarousel-right::before {
+                            content: "";                    
                         }
-            .carousel-control {
-                //background-image: none;
-                .glyphicon-myCarousel-right::before {
-                    content: "";                    
-                }
-                span.glyphicon-myCarousel-right {
-                    right: 5%;
-                    margin-right: -10px;
-                    display: inline-block;
-                    margin-top: -10px;
-                    position: absolute;
-                    top: 50%;
-                    z-index: 5;
-                }                
-            } 
-        }*/
+                        span.glyphicon-myCarousel-right {
+                            right: 5%;
+                            margin-right: -10px;
+                            display: inline-block;
+                            margin-top: -10px;
+                            position: absolute;
+                            top: 50%;
+                            z-index: 5;
+                        }                
+                    } 
+                }*/
     }
     .cd-color-3 {
         .left {
