@@ -40,7 +40,7 @@ div.container {
 }
 .cd-bg-1 {
     p.rul {
-        @include suffix(1,12);
+        @include suffix(3,12);
         //@include post(1);
     }
     .blockquote {

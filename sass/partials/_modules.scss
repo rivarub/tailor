@@ -1,4 +1,7 @@
 //HEADER
+/*header {
+    height: 100%;
+}*/
 header img {
     width: 100%;
 }
@@ -215,7 +218,7 @@ nav[role="navigation"] {
         color: $color1;
     }
     h1.rul {
-        @include rhythm-padding(3.35, 0.2);
+        @include rhythm-padding(4.55, 1.9166);
         margin: 0;
     }
     .container {
@@ -566,9 +569,10 @@ nav[role="navigation"] {
 }
 
 div.googlemap {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;    
+    width: 100%;
+    padding: 1.26582%;
+    //margin-left: auto;
+    //margin-right: auto;    
     iframe {
         width: 100%;        
     }
