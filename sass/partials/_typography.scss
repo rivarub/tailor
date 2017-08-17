@@ -14,8 +14,9 @@ $rem-with-px-fallback: true !global;
 /*h1 {
     @include rhythm-margins(1.5, 1);
 }*/
-P.rul {
-    @include rhythm-margins(1.4, 1.4);
+p.rul {
+    //@include rhythm-margins(1.4, 1.4);
+    @include rhythm-margins(1, 1);
 }
 
 .cd-color-2, .cd-color-3 {
@@ -36,7 +37,7 @@ P.rul {
 .cd-color-3 {    
     form {
         .part {
-            margin-bottom: 2em;
+            margin-bottom: 1.5em;
         }
     }
     .right {

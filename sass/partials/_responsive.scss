@@ -1,4 +1,12 @@
 @media screen and (max-width: $screen-tablet) {
+    #mobile-header {
+        display: block;
+        width: 100%;
+    }
+    header {
+        //background-image: url("../img/tailoring_.jpg");
+        display: none;
+    }
     h1.rul {
         //@include rhythm-margins(2, 1); //завеликі відступи прибрала коли робила слайдер.
     }
@@ -73,6 +81,9 @@
                                 }*/
             }
         }
+    }
+    .cd-fixed-bg.cd-bg-1 {
+        padding-top: 0;
     }
     .cd-color-2, .cd-color-3 {
         .left {
@@ -208,17 +219,26 @@
             i.fa-phone, i.fa-map-marker {
                 font-size: 23px;
             }
-/*            a.marker:hover {           
-                i.fa-phone {
-                    color: $color8;
-                }
-            }*/
+            /*            a.marker:hover {           
+                            i.fa-phone {
+                                color: $color8;
+                            }
+                        }*/
             ul.lang {
                 font-size: 1.1em;
             }
         }
     }
-    .cd-fixed-bg.cd-bg-1 {        
+    #mobile-header {
+        display: block;
+        width: 100%;
+    }
+    header {
+        //background-image: url("../img/tailoring_.jpg");
+        display: none;
+    }
+    .cd-fixed-bg.cd-bg-1 {
+        padding-top: 0;
         background-image: url("../img/tailor1_mobile.jpg");
         //background-color: #90350c;
         p.rul {

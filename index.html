@@ -13,7 +13,7 @@ and open the template in the editor.
         <!--        <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
@@ -26,12 +26,8 @@ and open the template in the editor.
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     </head>
     <body>
-        <header role="banner">
-            <div class="container">
-                <img src="img/head.png" alt="logo">
-            </div>
-        </header>
-        <div class="nav-top"></div>
+        <!--        <div class="nav-top"></div>-->
+        <img id="mobile-header" src="img/head.png" alt="logo">
         <nav role="navigation">
             <div class="inner-nav"> 
                 <ul class="header-buttons-list contact">
@@ -71,6 +67,13 @@ and open the template in the editor.
                 <li>587 351 1674</li>
             </ul>
         </nav>
+        <header role="banner">
+            <div class="container">
+                <!--                <img src="img/head.png" alt="logo">-->
+                <img src="img/quality.png" alt="logo">
+            </div>
+        </header>
+        
         <div class="nav-bottom"></div>
         <main>
             <a name="about_us"></a>
@@ -161,7 +164,7 @@ and open the template in the editor.
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-<!--                <br>-->
+                <!--                <br>-->
 
                 <div class="slidePanel" style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span> 

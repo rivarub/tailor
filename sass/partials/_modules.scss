@@ -1,9 +1,22 @@
 //HEADER
-/*header {
+#mobile-header {
+    display: none;
+}
+header {
     height: 100%;
-}*/
+    background-image: url("../img/tailoring.jpg");
+    //background-size: 80px 60px;
+    //background-position: 50% top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
 header img {
     width: 100%;
+    //margin-top: 150px;
+    max-width: 77em;
+   @include centerer(true, true);
 }
 //NAVIGATION
 nav[role="navigation"] {
@@ -202,6 +215,7 @@ nav[role="navigation"] {
 }
 
 .cd-fixed-bg.cd-bg-1 {
+    //margin-top: 60px;
     //background-color: #90350c;
     //background-color: #a35830;
     background-color: #753116;
@@ -214,6 +228,7 @@ nav[role="navigation"] {
     //filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 .cd-bg-1 {
+    padding-top: 60px;
     h1.rul, h2.rul, p.rul {
         color: $color1;
     }
@@ -223,8 +238,9 @@ nav[role="navigation"] {
     }
     .container {
         background-color: rgba($color7,.2);
+        
         //filter: alpha(opacity=60); // For IE8 and earlier 
-    }      
+    }   
     .inside {
         //clear: left;
         //width: 100%;
@@ -360,7 +376,7 @@ nav[role="navigation"] {
     /* The dots/bullets/indicators */
     .slidePanel {
         //background-color: yellowgreen;
-        margin-top: -10px;
+        margin-top: 0px;
         display: none;
     }
 
@@ -467,9 +483,11 @@ nav[role="navigation"] {
         //background-color: $color6;
         label {
             display: block;
-            margin-bottom: 0.75em;
+            //margin-bottom: 0.75em;
+            margin-bottom: 0.2em;
             color: $color8;
-            font-size: $p;
+            //font-size: $p;
+            font-size: 0.9em;
             letter-spacing: 0.15em;
             //font-weight: lighter;
             font-weight: 300;
@@ -478,7 +496,7 @@ nav[role="navigation"] {
             line-height: 2em;
             padding: 0 0.5em;
             color: $color5;
-            font-size: 1em;
+            font-size: 1.2em;
         }
         textarea {
             line-height: 2em;
