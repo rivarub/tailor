@@ -4,6 +4,7 @@
 }*/
 header {
     height: 100%;
+    margin-top: 56px;
     background-image: url("../img/tailoring.jpg");
     //background-size: 80px 60px;
     //background-position: 50% top;
@@ -36,9 +37,12 @@ nav[role="navigation"] {
     //background-color: rgba((mix($color11,$color12,80%)),0.95);
     //background-color: rgba((mix($color11,$color5,90%)),0.95);
     padding: 0.625em 0;  
-    margin-bottom: 6px;
+    //margin-bottom: 6px;
     line-height: 1.5em;
-    position: relative;
+    //position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     .mobile, .mobile_navPhone {
         display: none;
     }
