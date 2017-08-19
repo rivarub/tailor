@@ -1,7 +1,7 @@
 //HEADER
-#mobile-header {
+/*#mobile-header {
     display: none;
-}
+}*/
 header {
     height: 100%;
     background-image: url("../img/tailoring.jpg");
@@ -10,14 +10,21 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
+    img {
+        width: 100%;
+        //margin-top: 150px;
+        max-width: 77em;
+        @include centerer-middl-down(true, true);
+    }
+    #home {
+        display: block;
+    }
+    #home-mobile {
+        display: none;
+    }    
 }
-header img {
-    width: 100%;
-    //margin-top: 150px;
-    max-width: 77em;
-   @include centerer(true, true);
-}
+
 //NAVIGATION
 nav[role="navigation"] {
     @extend %clearfix;
@@ -238,7 +245,7 @@ nav[role="navigation"] {
     }
     .container {
         background-color: rgba($color7,.2);
-        
+
         //filter: alpha(opacity=60); // For IE8 and earlier 
     }   
     .inside {
@@ -307,7 +314,7 @@ nav[role="navigation"] {
     /*    #myCarousel {
             display: none;
         }*/
-    
+
     /* Slideshow container */
     .slideshow-container {
         display: none;
@@ -459,21 +466,21 @@ nav[role="navigation"] {
             //margin-bottom: gutter(12);
             @include gallery(3 of 15);
             border-bottom: none;
-/*            img {
-                width: 100%;
-            }
-            &:hover {
-                -webkit-transform: scale(1.1);
-                -moz-transform: scale(1.1);
-                -o-transform: scale(1.1);
-                -ms-transform: scale(1.1);
-                transform: scale(1.1);
-                transition-duration: .5s;
-                //padding: 20px;
-                //background-color: yellowgreen;
-                //overflow: hidden;
-                //position: absolute;
-            }*/
+            /*            img {
+                            width: 100%;
+                        }
+                        &:hover {
+                            -webkit-transform: scale(1.1);
+                            -moz-transform: scale(1.1);
+                            -o-transform: scale(1.1);
+                            -ms-transform: scale(1.1);
+                            transform: scale(1.1);
+                            transition-duration: .5s;
+                            //padding: 20px;
+                            //background-color: yellowgreen;
+                            //overflow: hidden;
+                            //position: absolute;
+                        }*/
         }
     }
 }
@@ -493,15 +500,16 @@ nav[role="navigation"] {
             font-weight: 300;
         }
         input {
-            line-height: 2em;
+            line-height: 2.5em;
             padding: 0 0.5em;
             color: $color5;
             font-size: 1.2em;
         }
         textarea {
-            line-height: 2em;
-            padding: 0 0.5em;
+            line-height: 1.5em;
+            padding: 0.5em 0.5em;
             color: $color5;
+            font-size: 1.2em;
         }
         input, textarea {
             border: 1px solid $color8;

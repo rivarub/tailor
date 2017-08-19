@@ -1,11 +1,18 @@
 @media screen and (max-width: $screen-tablet) {
-    #mobile-header {
-        display: block;
-        width: 100%;
+    p.rul, blockquote {
+        margin-right: 0;
     }
+    /*    #mobile-header {
+            display: block;
+            width: 100%;
+        }*/
     header {
-        //background-image: url("../img/tailoring_.jpg");
-        display: none;
+        background-image: url("../img/tailoring_.jpg");
+        //display: none;
+        img {
+            width: 70%;
+            @include centerer-down(true, true);
+        }
     }
     h1.rul {
         //@include rhythm-margins(2, 1); //завеликі відступи прибрала коли робила слайдер.
@@ -229,13 +236,22 @@
             }
         }
     }
-    #mobile-header {
-        display: block;
-        width: 100%;
-    }
+    /*    #mobile-header {
+            display: block;
+            width: 100%;
+        }*/
     header {
-        //background-image: url("../img/tailoring_.jpg");
-        display: none;
+        background-image: url("../img/tailoring_.jpg");
+        //display: none;
+        img {
+            width: 100%;
+        }
+        #home {
+            display: none;
+        }
+        #home-mobile {
+            display: block;
+        }
     }
     .cd-fixed-bg.cd-bg-1 {
         padding-top: 0;
