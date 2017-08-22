@@ -1027,7 +1027,7 @@ div.container {
 /* line 5, ../sass/partials/_modules.scss */
 header {
   height: 100%;
-  margin-top: 56px;
+  margin-top: 8px;
   background-image: url("../img/tailoring.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -1058,7 +1058,7 @@ nav[role="navigation"] {
   background-color: #ece3da;
   padding: 0.625em 0;
   line-height: 1.5em;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
 }

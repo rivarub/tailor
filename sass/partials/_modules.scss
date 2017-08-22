@@ -4,7 +4,7 @@
 }*/
 header {
     height: 100%;
-    margin-top: 56px;
+    margin-top: 8px;
     background-image: url("../img/tailoring.jpg");
     //background-size: 80px 60px;
     //background-position: 50% top;
@@ -39,8 +39,8 @@ nav[role="navigation"] {
     padding: 0.625em 0;  
     //margin-bottom: 6px;
     line-height: 1.5em;
-    //position: relative;
-    position: fixed;
+    position: relative;
+    //position: fixed;
     top: 0;
     width: 100%;
     .mobile, .mobile_navPhone {
