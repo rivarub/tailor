@@ -4,8 +4,10 @@
 }*/
 header {
     height: 100%;
-    margin-top: 8px;
-    background-image: url("../img/tailoring.jpg");
+    //margin-top: 8px;
+    margin-top: 0.2em;
+    //background-image: url("../img/tailoring.jpg");
+    background-image: linear-gradient(to right, rgba(236, 228, 219, 0.7) 0%, rgba(236, 228, 219, 0.3) 100%), url("../img/tailoring_3.jpg");
     //background-size: 80px 60px;
     //background-position: 50% top;
     background-size: cover;
@@ -31,12 +33,19 @@ nav[role="navigation"] {
     @extend %clearfix;
     z-index: 1000;
     //height: 56px;
-    background-color: #ece3da; // light
+    //background-color: #ece3da; // light
+    //background-color: rgba(236, 227, 218, 0.96);
+    //background-color: rgba(234, 230, 218, 0.96);
+    background-color: $color13;
+    //background-color: rgba(230, 226, 213, 0.97);
+    //background-color: rgba(212, 207, 189, 0.95);
+    //background-color: rgba(228, 225, 214, 0.97);
     //background-color: $color11;
     //background-color: $color7;
     //background-color: rgba((mix($color11,$color12,80%)),0.95);
     //background-color: rgba((mix($color11,$color5,90%)),0.95);
-    padding: 0.625em 0;  
+    //padding: 0.625em 0;  
+    padding: 0.8em 0;
     //margin-bottom: 6px;
     line-height: 1.5em;
     position: relative;
@@ -196,7 +205,8 @@ nav[role="navigation"] {
             }                
         }
         li.selected a {
-            color: $color8;
+            //color: $color8;
+            color: $color7;
             //color: $color1;
             //border-bottom: 3px solid;
         }
@@ -238,8 +248,69 @@ nav[role="navigation"] {
     //opacity: 0.6;
     //filter: alpha(opacity=60); /* For IE8 and earlier */
 }
+
+.profile {
+    //background-color: lighten($color13, 20%);
+    background-color: $color13;
+    p.rul {
+        margin: 0;
+        color: darken($color6, 25%);
+        margin-bottom: 0.75em;
+    }
+    span {
+        color: darken($color6, 35%);
+    }
+    span.space {
+        //font-weight: bold;
+        letter-spacing: 0.15em;        
+    }    
+    .inner-content {
+        //background-color: $color13;
+        padding: 6.5em 0 6em 0;
+        div.face {
+            //width: 33.33%;
+            float: left;
+            //background-color: $color5;
+            padding: 1em;
+            //padding-left: 0;
+            text-align: center;
+            .fotoFraim {
+                background-color: $color14;
+                padding-top: 1.6em;
+                padding-bottom: 1.5em;
+                margin-bottom: 2em;
+            }
+            img {
+                width: 90%;
+                border-radius: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                //float: left;
+            }
+        }
+        div.face:nth-child(2) {
+            padding: 0 1.3em 0 1.3em;
+        }    
+        div.card {
+            width: 31%;
+            background-color: darken($color13, 10.5%);
+        }
+        div.intro {
+            width: 38%;
+        }
+        div.duble {
+        display: none;
+        width: 40%;
+        text-align: center;
+        padding: 1em;
+    }
+    }
+    
+
+}
+
 .cd-bg-1 {
-    padding-top: 60px;
+    //padding-top: 60px;
     h1.rul, h2.rul, p.rul {
         color: $color1;
     }
@@ -274,19 +345,35 @@ nav[role="navigation"] {
             //font-size: $p;
         }
         p.opinion1 {
-            font-family: 'Homemade Apple', cursive;
+            //font-family: 'Homemade Apple', 'Neucha', 'Marck Script', cursive;
+            font-family: 'Homemade Apple', 'Marck Script', cursive;
+            //font-size: 1.175em;
+            font-size: 1.05em;
             letter-spacing: 0.05em;
             //font-family: 'Caveat', cursive;
         }
-        p.opinion2 {
-            font-family: 'Calligraffitti', cursive;
+        p.opinion1_ua {
+            //font-family: 'Homemade Apple', 'Neucha', 'Marck Script', cursive;
+            font-family: 'Marck Script', cursive;
+            //font-size: 1.175em;
+            font-size: 1.25em;
+            //letter-spacing: 0.05em;
+            //font-family: 'Caveat', cursive;
+        }
+        p[class*="opinion2"] {
+            font-family: 'Calligraffitti', 'Bad Script', cursive;
             //font-size: 1.375em;
-            @include font-size($h2);
+            font-size: 1.15em;
+            //@include font-size($h2);
             letter-spacing: 0;
             span {
-                font-size: 0.85em;
+                //font-size: 0.85em;
+                font-size: 0.95em;
             }
             //clear: left;
+        }
+        p.opinion2_ua {
+            letter-spacing: 0.1em;
         }
         p.rul:first-child {
             margin-top: 0;
@@ -460,7 +547,8 @@ nav[role="navigation"] {
     .photos {
         //@include container;
         //@include susy-grid-background;
-        background-color: $color9;
+        //background-color: $color9;
+        background-color: $color13;
         //margin-bottom: gutter(12);
         @include clearfix;
         @include margin-leader(2);
@@ -489,7 +577,7 @@ nav[role="navigation"] {
     }
 }
 
-.cd-color-3 {
+.cd-color-3 {    
     form {
         //background-color: $color6;
         label {
@@ -600,7 +688,7 @@ nav[role="navigation"] {
 
 div.googlemap {
     width: 100%;
-    padding: 1.26582%;
+    //padding: 1.26582%;
     //margin-left: auto;
     //margin-right: auto;    
     iframe {
@@ -608,22 +696,25 @@ div.googlemap {
     }
 }
 footer {
-    background-color: $color11;    
+    //background-color: $color11;
+    background-color: $color13;
     text-align: center;
     p.rul {
-        color: $color1;
+        //color: $color1;
+        color: $color6;
         line-height: 4em;
         margin: 0;
         font-style: normal;
     }
     a {
-        color: $color3;
+        //color: $color3;
+        color: $color6;
         border-bottom: 1px solid;
         font-style: italic;
         &:hover {
             //border-bottom: 2px solid;
             border-bottom: none;
-            color: $color2;
+            color: $color11;
         }
     }
 }

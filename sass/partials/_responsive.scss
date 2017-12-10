@@ -1,3 +1,57 @@
+@media screen and (max-width: 1140px) {
+    .profile {        
+        div.inner-content {
+            max-width: $container-width;    
+            margin: auto;    
+            @include container;
+            div.fullscreen {
+                display: none;
+            }
+            div.card {
+                width: 25%;
+                margin-right: 1em;
+                margin-bottom: 1em;                
+                h3 {
+                    //display: none;
+                    @include font-size($profile-fs);
+                    padding: 0 1em;
+                }                
+            }
+            div.face {
+                padding: 0;
+                div.fotoFraim {
+                    padding-top: 0.5em;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }                
+            }
+            div.face:nth-child(3) {
+                margin-right: 2em;
+                h3 {
+                    padding: 0 0.5em;
+                }
+            }
+            div.face:last-child {
+                padding: 0;
+            }
+            div.duble {
+                display: block; 
+                width: 100%;
+                float: none;
+                text-align: justify;
+                pading: 0;                
+            }
+            div.face {
+                div.fotoFraim {
+                    padding-top: 0.5em;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+                //padding: 0;
+            }
+        }
+    }
+}
 @media screen and (max-width: $screen-tablet) {
     p.rul, blockquote {
         margin-right: 0;
@@ -10,10 +64,11 @@
         background-image: url("../img/tailoring_.jpg");
         //display: none;
         img {
-            width: 70%;
+            //width: 70%;
+            width: 94%;
             @include centerer-down(true, true);
         }
-    }
+    }    
     h1.rul {
         //@include rhythm-margins(2, 1); //завеликі відступи прибрала коли робила слайдер.
     }
@@ -23,6 +78,7 @@
     nav[role="navigation"] {
         padding-bottom: 12px;
         //margin-bottom: 0;
+        ///position: fixed;
         .bar {
             display: block;
         }
@@ -48,13 +104,15 @@
                 padding: 0;
                 //line-height: 2.5em;
                 a {
-                    line-height: 2.7em;
+                    //line-height: 2.7em;
+                    line-height: 3em;
                     display: block;
+                    padding-top: 0.2em;
                     //margin: 0 -1em;
                     &:hover {
                         border-bottom: none;
                         //background-color: rgba($color8,0.5);
-                        background-color: $color11;
+                        background-color: $color12;
                         color: $color1;
                     }
                 }
@@ -118,7 +176,8 @@
         }
         .slideshow-container {
             display: block;
-            background-color: #866845;
+            //background-color: #866845;
+            background-color: $color12;
             .mySlides {
                 width: 40%;
                 min-width: 350px;
@@ -242,6 +301,7 @@
         }*/
     header {
         background-image: url("../img/tailoring_.jpg");
+        //background-image:  linear-gradient(to right, rgba(236, 228, 219, 0.7) 0%, rgba(236, 228, 219, 0.3) 100%), url("../img/tailoring_4.jpg");
         //display: none;
         img {
             width: 100%;
@@ -253,6 +313,57 @@
             display: block;
         }
     }
+
+    .profile {        
+        div.inner-content {
+            //max-width: $container-width;    
+            //margin: auto;    
+            //@include container;
+            /*            div.fullscreen {
+                            display: none;
+                        }*/
+            div.card {
+                width: 48%;
+                margin-right: auto;
+                margin-bottom: auto;                
+                /*                                h3 {
+                                                    //display: none;
+                                                    @include font-size($ul-menu);
+                                                    
+                                                }*/
+            }
+            div.card:first-child {
+                margin-right: 4%;
+            }
+            div.face:nth-child(3) {
+                margin-right: 0;
+            }/*
+            div.face:last-child {
+                padding: 0;
+            }*/
+            div.duble {
+                //display: block; 
+                width: 100%;
+                margin-top: 1em;
+                float: left;
+                //text-align: justify;
+                pading: 0;
+                /*                p:first-child {
+                                    padding-top: 12em;
+                                }                */
+            }
+            div.face {
+                padding: 0;
+                div.fotoFraim {
+                    padding-top: 0.5em;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+            }
+
+        }
+    }
+
     .cd-fixed-bg.cd-bg-1 {
         padding-top: 0;
         background-image: url("../img/tailor1_mobile.jpg");
@@ -276,13 +387,13 @@
                             @include pre(0.99,12); 
                             //margin-left: 8.5%;
                         }*/
-            p.opinion1 {
+            p[class~="opinion1"] {
                 @include pad(0.7,0,12);
                 //@include prefix(1,12);
                 //@include span-columns(8,12);
                 //margin-left: 25px;
             }
-            p.opinion2 {
+            p[class~="opinion2"] {
                 //width: 75%;
                 @include pad(0.7,0,12);
                 //@include span-columns(10,12);
@@ -414,4 +525,78 @@
                 font-size: 0.7em;
             }
         }*/
+}
+
+
+@media screen and (max-width: $screen-smartphone-xxs) {
+    .profile {        
+        div.inner-content {
+            max-width: 100%;
+            width: 100%;
+            padding: 5em 0 5em 0;
+            //margin: auto;    
+            //@include container;
+            /*            div.fullscreen {
+                            display: none;
+                        }*/
+            /*            div.card {
+                            width: 25%;
+                            margin-right: 1em;
+                            margin-bottom: 1em;                
+                            h3 {
+                                //display: none;
+                                @include font-size($profile-fs);
+                                padding: 0 1em;
+                            }                
+                        }*/
+            /*            div.face {
+                            padding: 0;
+                            div.fotoFraim {
+                                padding-top: 0.5em;
+                                padding-bottom: 0;
+                                margin-bottom: 0;
+                            }                
+                        }*/
+            /*            div.face:nth-child(3) {
+                            margin-right: 2em;
+                            h3 {
+                                padding: 0 0.5em;
+                            }
+                        }*/
+            /*            div.face:last-child {
+                            padding: 0;
+                        }*/
+            div.card {
+                width: 50%;
+            }
+            div.face:first-child {
+                margin-right: 0;
+            }
+            div.face:last-child {
+                padding: 1em 1.5625em 0 1.5625em;
+                //padding-left: 1.5625em;
+                //padding-right: 1.5625em;              
+            }
+            div.duble {                
+                //padding-left: 1.5625em;
+                //padding-right: 1.5625em;
+                /*                max-width: $container-width;    
+                                margin: auto;    
+                                @include container;
+                                display: block; */
+                //width: 100%;
+                //float: none;
+                //text-align: justify;
+                //pading: 0;                
+            }
+            /*            div.face {
+                            div.fotoFraim {
+                                padding-top: 0.5em;
+                                padding-bottom: 0;
+                                margin-bottom: 0;
+                            }
+                            //padding: 0;
+                        }*/
+        }
+    }
 }

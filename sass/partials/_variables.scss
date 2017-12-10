@@ -10,7 +10,8 @@ $color9: #866845; // gold-midle-dark
 $color10: #453216; //inside-block background
 $color11: #826845; //gold-dark-footer
 $color12: #918363; //submit
-
+$color13: rgba(234, 230, 218, 0.96);
+$color14: rgba(200, 192, 163, 0.5); // fraime for foto
 // Fonts
 /*$blockquote: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;*/
 //$h1: 1.875em; // 30px
@@ -144,6 +145,15 @@ $screen-smartphone-xs: 0.95em,
 $screen-smartphone : 1em,
 $screen-tablet : 1.04em,
 $screen-desktop: 1.04em,
+);
+$profile-fs: (
+null  : 0.1em,
+$screen-smartphone-xxxs : 0.55em,
+$screen-smartphone-xxs : 0.6em,
+$screen-smartphone-xs: 0.6em,
+$screen-smartphone : 0.8em,
+$screen-tablet : 1em,
+$screen-desktop: 1.125em,
 );
 
 

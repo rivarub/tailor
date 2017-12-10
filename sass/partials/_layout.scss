@@ -58,13 +58,13 @@ div.container {
             @include pre(0.99,12); 
             //margin-left: 8.5%;
         }
-        p.opinion1 {
+        p[class*="opinion1"] {
             @include pad(0.7,4.5,12);
             //@include prefix(1,12);
             //@include span-columns(8,12);
             //margin-left: 25px;
         }
-        p.opinion2 {
+        p[class*="opinion2"] {
             //width: 75%;
             @include pad(0.7,2,12);
             //@include span-columns(10,12);
