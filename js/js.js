@@ -1,39 +1,42 @@
 $(document).ready(function () {
-    $(window).scroll(function ()
-    {
-        if ($(window).scrollTop() > 0) {
-            //$('header').css('display', 'none');
-            $('nav').css('position', 'fixed').css('top', '0').css('width', '100%');
-            //$('.cd-bg-1').css('padding-top', '100px');
+     $(window).scroll(function ()
+     {
+         if ($(window).scrollTop() > 0) {
+             //$('header').css('display', 'none');
+             $('nav').css('position', 'fixed').css('top', '0').css('width', '100%');
+             //$('.cd-bg-1').css('padding-top', '100px');
 //            $('.nav-bottom').css('display', 'block').css('position', 'fixed').css('top', '54px');
-        } else {
-            //$('header').css('display', 'block');
-            $('nav').css('position', 'static');
-            //$('.cd-bg-1').css('padding-top', '0');
+         } else {
+             //$('header').css('display', 'block');
+             //$('header').css('margin-top', '61px');
+             $('header').css('margin-top', '4em');
+             //$('nav').css('position', 'static');
+             //$('.cd-bg-1').css('padding-top', '0');
 //            $('.nav-bottom').css('display', 'none');
-        }
-        if ($(window).scrollTop() > 800 && $(window).scrollTop() < 1950){
-            $('.about').css('color', '#aa0019');
-        } else {
-            $('.about').css('color', '#484047');
-        }
-        if ($(window).scrollTop() > 1949 && $(window).scrollTop() < 3100) {
-            $('.serv').css('color', '#aa0019');
-        } else {
-            $('.serv').css('color', '#484047');
-        }
-        if ($(window).scrollTop() > 3199) {
-            $('.contacts').css('color', '#aa0019');
-        } else {
-            $('.contacts').css('color', '#484047');
-        }
-    });
+         }
+         if ($(window).scrollTop() > 800 && $(window).scrollTop() < 1820){
+             $('.about').css('color', '#aa0019');
+         } else {
+             $('.about').css('color', '#484047');
+         }
+         if ($(window).scrollTop() > 1819 && $(window).scrollTop() < 2730) {
+             $('.serv').css('color', '#aa0019');
+         } else {
+             $('.serv').css('color', '#484047');
+         }
+         if ($(window).scrollTop() > 2729) {
+             $('.contacts').css('color', '#aa0019');
+         } else {
+             $('.contacts').css('color', '#484047');
+         }
+     }); 
     //Mobile-nav
     showMobileMenu = false;
     $('.mobile').hide();
     $('.bar').click(function (event) {
         $('.mobile_navPhone').hide();
         $('.fa-phone').css('color', '#aa0019');
+        $('nav').css('position', 'fixed');//щоби картинка не напливала на пункти меню
         showMobileMenu = !showMobileMenu;
         if (showMobileMenu == true) {
             $('.mobile').show();

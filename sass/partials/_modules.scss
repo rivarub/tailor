@@ -54,6 +54,18 @@ nav[role="navigation"] {
     width: 100%;
     .mobile, .mobile_navPhone {
         display: none;
+        text-decoration: none;
+        a {
+            font-size: 1.2em;
+            line-height: 2em;   
+        }
+        a:hover {
+            color: $color7;
+            border-bottom: none;                       
+        }
+        a:visited {
+            color: $color9;
+        }
     }
     a {
         border-bottom: none;
@@ -299,13 +311,13 @@ nav[role="navigation"] {
             width: 38%;
         }
         div.duble {
-        display: none;
-        width: 40%;
-        text-align: center;
-        padding: 1em;
+            display: none;
+            width: 40%;
+            text-align: center;
+            padding: 1em;
+        }
     }
-    }
-    
+
 
 }
 
@@ -319,8 +331,8 @@ nav[role="navigation"] {
         margin: 0;
     }
     .container {
-        background-color: rgba($color7,.2);
-
+        /*        background-color: rgba($color7,.2);*/
+        background-color: $color15;
         //filter: alpha(opacity=60); // For IE8 and earlier 
     }   
     .inside {
@@ -511,6 +523,31 @@ nav[role="navigation"] {
         to {opacity: 1}
     }
 
+    //greed-gallery
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        background-color: $color13;
+    }
+
+    .column img {
+        margin-top: 12px;
+        border-radius: 5px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    // end //greed-gallery
 }
 
 .cd-color-2, .cd-color-3 {
@@ -718,3 +755,109 @@ footer {
         }
     }
 }
+
+// Modal
+
+#myImg, #myImg1, #myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover, #myImg1:hover, #myImg2:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    //width: 80%;
+    max-width: 700px;
+    max-height: 90%;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    letter-spacing: 0.17em;
+    word-spacing: 0.5em;
+    //font-weight: bold;
+    padding: 25px 0 0 0;
+    height: 50px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 84px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    //font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
