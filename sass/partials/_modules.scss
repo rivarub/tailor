@@ -528,14 +528,31 @@ nav[role="navigation"] {
         text-align: center;
         padding: 32px;
     }
+    .gal {
+        //padding-right: 1.26582%;
+        //padding-left: 1.26582%;
+        padding-left: 0.7%;
+        padding-right: 0.7%;
+        background-color: $color13;
+    }    
     /* Create two equal columns that floats next to each other */
     .column {
         float: left;
-        width: 25%;
+        width: 12.5%;
         padding: 10px;
         background-color: $color13;
     }
-
+    /*    .column:first-child {
+            img {
+                padding-left: 20px; 
+            }
+    
+        }
+        .column:last-child {
+            img {
+                padding-right: 20px;
+            }      
+        }*/
     .column img {
         margin-top: 12px;
         border-radius: 5px;
