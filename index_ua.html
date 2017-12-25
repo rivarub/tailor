@@ -301,15 +301,47 @@ and open the template in the editor.
                 </div>
                 <!--                </div>-->
                 <script>
-                    function show_hallo() {
-                        alert('Hallo, World!');
-                        return false;
-                    }
-                    $(document).ready (show_hallo) ;
-                    function show_volodymyra() {
-                        $('img#myImg').attr("src", "img/vlada_.jpg");
-                    }
-                    $(document).ready (show_volodymyra);
+//                    function show_hallo() {
+//                        alert('Hallo, World!');
+//                        return false;
+//                    }
+//                    $(document).ready (show_hallo) ;
+//                    function show_volodymyra() {
+//                        $('img#myImg').attr("src", "img/vlada_.jpg");
+//                    }
+//                    $(document).ready(show_volodymyra);
+
+//                    var myImages = new Array ();
+//                    myImages[0].src = "img/girl-bride_dress.jpg";
+//                    myImages[1].src = "img/bride_dress.jpg";
+//                    myImages[2].src = "img/bride_dress3.jpg";
+//                    myImages[3].src = "img/girl-bride_dress2.jpg";
+//                    myImages[4].src = "img/bride_dress2.jpg";
+//                    myImages[5].src = "img/ball_pair.jpg";
+//                    myImages[6].src = "img/blue_glossy_dress.jpg";
+//                    myImages[7].src = "img/blue_dress.jpg";
+//                    myImages[8].src = "img/blue_crystals.jpg";
+//                    myImages[9].src = "img/blue_glossy_dress2.jpg";
+//                    myImages[10].src = "img/blue_dress2.jpg";
+//                    myImages[11].src = "img/bride_crystals.jpg";
+//                    myImages[12].src = "img/baby-bride_dress.jpg";
+//                    myImages[13].src = "img/pink_dress.jpg";
+//                    myImages[14].src = "img/red_dress.jpg";
+//                    myImages[15].src = "img/baby-bride_dress2.jpg";
+//                    myImages[16].src = "img/pink_dress2.jpg";
+//                    myImages[17].src = "img/red_dress2.jpg";
+//                    myImages[18].src = "img/red_crystals_dress.jpg";
+//                    myImages[19].src = "img/white_jacket.jpg";
+//                    myImages[20].src = "img/bride_crystals1.jpg";
+//                    myImages[21].src = "img/red_crystals_dress2.jpg";
+//                    myImages[22].src = "img/white_jacket2.jpg";
+//                    myImages[23].src = "img/tailoring_v.jpg";
+                    
+//                    var picture = 1;
+//                    $("img", 'div.gal').each(function () {
+//                        picture++;
+//                        $(this).attr("id", "pic_' + picture + '");
+//                    });
 // Get the elements with class="column"
                     var elements = document.getElementsByClassName("column");
 
@@ -339,44 +371,44 @@ and open the template in the editor.
 
                     // MODAL
                     // Get the modal
-                    var modal = document.getElementById('myModal');
-                    //var modal1 = document.getElementById('myModal1');
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-                    var img = document.getElementById('myImg');
-                    var modalImg = document.getElementById("img01");
-                    var captionText = document.getElementById("caption");
-                    img.onclick = function () {
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText.innerHTML = this.alt;
-                    }
-
-                    var img = document.getElementById('myImg1');
-                    var modalImg = document.getElementById("img02");
-                    var captionText = document.getElementById("caption");
-                    img.onclick = function () {
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText.innerHTML = this.alt;
-                    }
-
-                    var img = document.getElementById('myImg2');
-                    var modalImg = document.getElementById("img03");
-                    var captionText = document.getElementById("caption");
-                    img.onclick = function () {
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText.innerHTML = this.alt;
-                    }
-
-
-// Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-                    span.onclick = function () {
-                        modal.style.display = "none";
-                    }
+//                    var modal = document.getElementById('myModal');
+//                    //var modal1 = document.getElementById('myModal1');
+//// Get the image and insert it inside the modal - use its "alt" text as a caption
+//                    var img = document.getElementById('myImg');
+//                    var modalImg = document.getElementById("img01");
+//                    var captionText = document.getElementById("caption");
+//                    img.onclick = function () {
+//                        modal.style.display = "block";
+//                        modalImg.src = this.src;
+//                        captionText.innerHTML = this.alt;
+//                    }
+//
+//                    var img = document.getElementById('myImg1');
+//                    var modalImg = document.getElementById("img02");
+//                    var captionText = document.getElementById("caption");
+//                    img.onclick = function () {
+//                        modal.style.display = "block";
+//                        modalImg.src = this.src;
+//                        captionText.innerHTML = this.alt;
+//                    }
+//
+//                    var img = document.getElementById('myImg2');
+//                    var modalImg = document.getElementById("img03");
+//                    var captionText = document.getElementById("caption");
+//                    img.onclick = function () {
+//                        modal.style.display = "block";
+//                        modalImg.src = this.src;
+//                        captionText.innerHTML = this.alt;
+//                    }
+//
+//
+//// Get the <span> element that closes the modal
+//                    var span = document.getElementsByClassName("close")[0];
+//
+//// When the user clicks on <span> (x), close the modal
+//                    span.onclick = function () {
+//                        modal.style.display = "none";
+//                    }
                 </script>
                 <!--Lightbox-->
 
