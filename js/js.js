@@ -84,6 +84,10 @@ $(document).ready(function () {
 //                    $(document).ready(show_volodymyra);
 
     var myImages = new Array();
+    var picturesCount = $('img', 'div.gal').length;
+    for(i = 0; i < picturesCount; i++) {
+        myImages[i] = {};
+    }
     myImages[0].src = "img/girl-bride_dress.jpg";
     myImages[0].alt = "girl-bride dress";
     myImages[1].src = "img/bride_dress.jpg";
@@ -110,12 +114,12 @@ $(document).ready(function () {
     myImages[22].src = "img/white_jacket2.jpg";
     myImages[23].src = "img/tailoring_v.jpg";
                 
-    i = 0;
-    $("img", 'div.gal').each(function () {
-        
-        $(this).attr("id", 'img ' + i);
-        //$(this).attr("alt", myImages[i].alt);
-        //$(this).attr("src", myImages[i].src);
+    var i = 0;
+    $('img', 'div.gal').each(function () {
+        $(this).attr('id', 'img' + i);
+        //console.log(i);
+        $(this).attr("src", myImages[i].src);
+        $(this).attr("alt", myImages[i].alt);
         i++;
     });
     
@@ -155,7 +159,7 @@ $(document).ready(function () {
     var modal = document.getElementById('myModal');
     //var modal1 = document.getElementById('myModal1');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('myImg');
+    var img = document.getElementById('img0');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
     img.onclick = function () {
