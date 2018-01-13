@@ -83,49 +83,7 @@ $(document).ready(function () {
 //                    }
 //                    $(document).ready(show_volodymyra);
 
-    var myImages = new Array();
-    var picturesCount = $('img', 'div.gal').length;
-    for(i = 0; i < picturesCount; i++) {
-        myImages[i] = {};
-    }
-    myImages[0].src = "img/girl-bride_dress.jpg";
-    myImages[0].alt = "girl-bride dress";
-    myImages[1].src = "img/bride_dress.jpg";
-    myImages[2].src = "img/bride_dress3.jpg";
-    myImages[3].src = "img/girl-bride_dress2.jpg";
-    myImages[4].src = "img/bride_dress2.jpg";
-    myImages[5].src = "img/ball_pair.jpg";
-    myImages[6].src = "img/blue_glossy_dress.jpg";
-    myImages[7].src = "img/blue_dress.jpg";
-    myImages[8].src = "img/blue_crystals.jpg";
-    myImages[9].src = "img/blue_glossy_dress2.jpg";
-    myImages[10].src = "img/blue_dress2.jpg";
-    myImages[11].src = "img/bride_crystals.jpg";
-    myImages[12].src = "img/baby-bride_dress.jpg";
-    myImages[13].src = "img/pink_dress.jpg";
-    myImages[14].src = "img/red_dress.jpg";
-    myImages[15].src = "img/baby-bride_dress2.jpg";
-    myImages[16].src = "img/pink_dress2.jpg";
-    myImages[17].src = "img/red_dress2.jpg";
-    myImages[18].src = "img/red_crystals_dress.jpg";
-    myImages[19].src = "img/white_jacket.jpg";
-    myImages[20].src = "img/bride_crystals1.jpg";
-    myImages[21].src = "img/red_crystals_dress2.jpg";
-    myImages[22].src = "img/white_jacket2.jpg";
-    myImages[23].src = "img/tailoring_v.jpg";
-                
-    var i = 0;
-    $('img', 'div.gal').each(function () {
-        $(this).attr('id', 'img' + i);
-        //console.log(i);
-        $(this).attr("src", myImages[i].src);
-        $(this).attr("alt", myImages[i].alt);
-        i++;
-    });
-    
-    
-    //                    for  (var i = 0; i < myImages.length; i++) {
-//                                .attr('id', 'picture');
+
 //  
 //// Get the elements with class="column"
 //                    var elements = document.getElementsByClassName("column");
@@ -159,7 +117,7 @@ $(document).ready(function () {
     var modal = document.getElementById('myModal');
     //var modal1 = document.getElementById('myModal1');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('img0');
+    var img = document.getElementById('myImg');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
     img.onclick = function () {
@@ -194,5 +152,69 @@ $(document).ready(function () {
     span.onclick = function () {
         modal.style.display = "none";
     }
+    
+    // Promko
+    var myImages = new Array();
+    var picturesCount = $('img', 'div.gal').length;
+    for(i = 0; i < picturesCount; i++) {
+        myImages[i] = {};
+    }
+    myImages[0].src = "img/girl-bride_dress.jpg";
+    myImages[0].alt = "girl-bride dress";
+    myImages[1].src = "img/bride_dress.jpg";
+    myImages[2].src = "img/bride_dress3.jpg";
+    myImages[3].src = "img/tailoring_v.jpg";
+    myImages[4].src = "img/halloween_costume.jpg";
+    myImages[5].src = "img/girl-bride_dress2.jpg";
+    myImages[6].src = "img/bride_dress2.jpg";
+    myImages[7].src = "img/ball_pair.jpg";
+    myImages[8].src = "img/bride_crystals.jpg";
+    myImages[9].src = "img/halloween_costume2.jpg";
+    myImages[10].src = "img/blue_glossy_dress.jpg";
+    myImages[11].src = "img/blue_dress.jpg";
+    myImages[12].src = "img/white_dress.jpg";
+    myImages[13].src = "img/wd.jpg";
+    myImages[14].src = "img/chervona_lyce.jpg";
+    myImages[15].src = "img/blue_glossy_dress2.jpg";
+    myImages[16].src = "img/blue_dress2.jpg";
+    myImages[17].src = "img/white_dress1.jpg";
+    myImages[18].src = "img/bride_crystals1.jpg";
+    myImages[19].src = "img/chervona_spyna.jpg";
+    myImages[20].src = "img/baby-bride_dress.jpg";
+    myImages[21].src = "img/pink_dress.jpg";
+    myImages[22].src = "img/red_dress.jpg";
+    myImages[23].src = "img/jacket.jpg";
+    myImages[24].src = "img/synya_lyce.jpg";
+    myImages[25].src = "img/baby-bride_dress2.jpg";
+    myImages[26].src = "img/pink_dress2.jpg";
+    myImages[27].src = "img/red_dress2.jpg";
+    myImages[28].src = "img/jacket1.jpg";
+    myImages[29].src = "img/synya_spyna.jpg";
+    myImages[30].src = "img/red_crystals_dress.jpg";
+    myImages[31].src = "img/white_jacket.jpg";
+    myImages[32].src = "img/white_dress_.jpg";
+    myImages[33].src = "img/overcoat.jpg";
+    myImages[34].src = "img/red_v.jpg";
+    myImages[35].src = "img/red_crystals_dress2.jpg";
+    myImages[36].src = "img/white_jacket2.jpg";
+    myImages[37].src = "img/white_dress_2.jpg";
+    myImages[38].src = "img/overcoat1.jpg";
+    myImages[39].src = "img/blue_crystals.jpg";
+    
+                
+    var i = 0;
+    $('img', 'div.gal').each(function () {
+        $(this).attr('id', 'img' + i);
+        console.log(i);
+        $(this).attr("src", myImages[i].src);
+        $(this).attr("alt", myImages[i].alt);
+        i++;
+    });
+
+
+
+    //                    for  (var i = 0; i < myImages.length; i++) {
+//                                .attr('id', 'picture');
+    
 // END GALLERY MODAL
 });
