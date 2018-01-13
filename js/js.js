@@ -203,19 +203,28 @@ $(document).ready(function () {
     
                 
     var i = 0;
+    var current;
     $('img', 'div.gal').each(function () {
         $(this).attr('id', 'img' + i);
         //console.log(i);
         $(this).attr("src", myImages[i].src);
         $(this).attr("alt", myImages[i].alt);
         $(this).click(function(){
-            //alert(this.id);
+            current = parseInt(this.id.substring(3));
             modal.style.display = "block";
             modalImg.src = this.src;
             captionText.innerHTML = this.alt;
         });
         i++;
     });
+    $('.nextSlide').click(nextSlide);
+    function nextSlide() {
+        current++;
+        if(current < picturesCount-1) {
+            modalImg.src = myImages[current].src;
+            captionText.innerHTML = myImages[current].alt;
+        }
+    }
 
 
 
