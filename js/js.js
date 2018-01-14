@@ -156,7 +156,9 @@ $(document).ready(function () {
 
     // Promko
     var myImages = new Array();
-    var picturesCount = $('img', 'div.gal').length;
+    //var picturesCount = $('img', 'div.gal').length;
+    //alert(picturesCount);
+    var picturesCount = 40;
     for (i = 0; i < picturesCount; i++) {
         myImages[i] = {};
     }
@@ -306,13 +308,22 @@ $(document).ready(function () {
     $('.nextSlide').click(nextSlide);
     function nextSlide() {
         current++;
-        if (current == picturesCount - 1) {
+        if (current == picturesCount) {
             current = 0;
         }
         modalImg.src = myImages[current].src;
         captionText.innerHTML = myImages[current].alt || '';
     }
 
+    $('.prevSlide').click(prevSlide);
+    function prevSlide() {
+        current--;
+        if (current < 0) {
+            current = picturesCount - 1;
+        }
+        modalImg.src = myImages[current].src;
+        captionText.innerHTML = myImages[current].alt || '';
+    }
 
 
     //                    for  (var i = 0; i < myImages.length; i++) {
