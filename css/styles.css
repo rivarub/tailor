@@ -1900,13 +1900,13 @@ footer a:hover {
   transition: 0.3s;
 }
 
-/* line 785, ../sass/partials/_modules.scss */
-#myImg:hover, #myImg1:hover, #myImg2:hover {
+/* line 787, ../sass/partials/_modules.scss */
+.gal img:hover {
   opacity: 0.7;
 }
 
 /* The Modal (background) */
-/* line 788, ../sass/partials/_modules.scss */
+/* line 792, ../sass/partials/_modules.scss */
 .modal {
   display: none;
   /* Hidden by default */
@@ -1929,7 +1929,7 @@ footer a:hover {
   background-color: rgba(0, 0, 0, 0.9);
   /* Black w/ opacity */
 }
-/* line 801, ../sass/partials/_modules.scss */
+/* line 805, ../sass/partials/_modules.scss */
 .modal .prev, .modal .next {
   cursor: pointer;
   position: absolute;
@@ -1945,7 +1945,7 @@ footer a:hover {
 }
 
 /* Modal Content (image) */
-/* line 817, ../sass/partials/_modules.scss */
+/* line 821, ../sass/partials/_modules.scss */
 .modal-content {
   margin: auto;
   display: block;
@@ -1954,7 +1954,7 @@ footer a:hover {
 }
 
 /* Caption of Modal Image */
-/* line 826, ../sass/partials/_modules.scss */
+/* line 830, ../sass/partials/_modules.scss */
 #caption {
   margin: auto;
   display: block;
@@ -1969,7 +1969,7 @@ footer a:hover {
 }
 
 /* Add Animation */
-/* line 841, ../sass/partials/_modules.scss */
+/* line 845, ../sass/partials/_modules.scss */
 .modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -1994,7 +1994,7 @@ footer a:hover {
   }
 }
 /* The Close Button */
-/* line 859, ../sass/partials/_modules.scss */
+/* line 863, ../sass/partials/_modules.scss */
 .close {
   position: absolute;
   top: 84px;
@@ -2004,7 +2004,7 @@ footer a:hover {
   transition: 0.3s;
 }
 
-/* line 869, ../sass/partials/_modules.scss */
+/* line 873, ../sass/partials/_modules.scss */
 .close:hover,
 .close:focus {
   color: #bbb;

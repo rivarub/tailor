@@ -1399,24 +1399,23 @@ nav[role="navigation"] ul.lang li.selected a {
   padding: 10px;
   background-color: rgba(234, 230, 218, 0.96);
 }
-
+/* line 557, ../sass/partials/_modules.scss */
 .cd-color-2 .column img {
   margin-top: 12px;
   border-radius: 5px;
 }
-
+/* line 563, ../sass/partials/_modules.scss */
 .cd-color-2 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
+/* line 572, ../sass/partials/_modules.scss */
 .cd-color-2 h1.rul, .cd-color-3 h1.rul {
   color: #484047;
   line-height: 1.7em;
 }
-
 /* line 577, ../sass/partials/_modules.scss */
 .cd-color-2 .gold, .cd-color-3 .gold {
   color: #a67c52;
@@ -1426,18 +1425,15 @@ nav[role="navigation"] ul.lang li.selected a {
   border-left: 1px solid #6b5554;
 }
 /* line 583, ../sass/partials/_modules.scss */
-
 .cd-color-2 ul, .cd-color-3 ul {
   color: #4d3b20;
   list-style: none;
 }
-
 /* line 599, ../sass/partials/_modules.scss */
 .cd-color-2 p.rul:last-child, .cd-color-3 p.rul:last-child {
   margin-bottom: 0em;
 }
 /* line 602, ../sass/partials/_modules.scss */
-
 .cd-color-2 .photos, .cd-color-3 .photos {
   background-color: rgba(234, 230, 218, 0.96);
   overflow: hidden;
@@ -1445,7 +1441,7 @@ nav[role="navigation"] ul.lang li.selected a {
   margin-top: 3em;
   padding: 1.26582%;
 }
-
+/* line 612, ../sass/partials/_modules.scss */
 .cd-color-2 .photos .photo, .cd-color-3 .photos .photo {
   width: 18.91892%;
   float: left;
@@ -1498,7 +1494,7 @@ nav[role="navigation"] ul.lang li.selected a {
   clear: none;
 }
 
-
+/* line 638, ../sass/partials/_modules.scss */
 .cd-color-3 form label {
   display: block;
   margin-bottom: 0.2em;
@@ -1507,39 +1503,37 @@ nav[role="navigation"] ul.lang li.selected a {
   letter-spacing: 0.15em;
   font-weight: 300;
 }
-
+/* line 649, ../sass/partials/_modules.scss */
 .cd-color-3 form input {
   line-height: 2.5em;
   padding: 0 0.5em;
   color: #4d3b20;
   font-size: 1.2em;
 }
-
+/* line 655, ../sass/partials/_modules.scss */
 .cd-color-3 form textarea {
   line-height: 1.5em;
   padding: 0.5em 0.5em;
   color: #4d3b20;
   font-size: 1.2em;
 }
-
 /* line 661, ../sass/partials/_modules.scss */
 .cd-color-3 form input, .cd-color-3 form textarea {
   border: 1px solid #a67c52;
 }
 /* line 664, ../sass/partials/_modules.scss */
-
 .cd-color-3 form .part {
   width: 100%;
   overflow: hidden;
   *zoom: 1;
   position: relative;
 }
-
+/* line 673, ../sass/partials/_modules.scss */
 .cd-color-3 form .sub {
   position: absolute;
   bottom: 0;
 }
-
+/* line 677, ../sass/partials/_modules.scss */
 .cd-color-3 form .sub input[type="submit"] {
   border-radius: 0;
   border: none;
@@ -1552,53 +1546,50 @@ nav[role="navigation"] ul.lang li.selected a {
   letter-spacing: 0.15em;
 }
 @media screen and (min-width: 200px) {
-
+  /* line 677, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 0.8em;
   }
 }
 @media screen and (min-width: 320px) {
-
+  /* line 677, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 0.8em;
   }
 }
 @media screen and (min-width: 540px) {
-
+  /* line 677, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 0.95em;
   }
 }
 @media screen and (min-width: 767px) {
-
+  /* line 677, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 991px) {
-
+  /* line 677, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 1.04em;
   }
 }
 @media screen and (min-width: 1299px) {
-
+  /* line 677, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 1.04em;
   }
 }
-
 /* line 689, ../sass/partials/_modules.scss */
 .cd-color-3 form .sub input[type="submit"]:hover {
   background-color: #826845;
 }
 /* line 697, ../sass/partials/_modules.scss */
-
 .cd-color-3 .right .part {
   overflow: hidden;
   *zoom: 1;
 }
-
 /* line 701, ../sass/partials/_modules.scss */
 .cd-color-3 .right h3.rul {
   float: left;
@@ -1608,12 +1599,10 @@ nav[role="navigation"] ul.lang li.selected a {
   float: right;
 }
 /* line 706, ../sass/partials/_modules.scss */
-
 .cd-color-3 .right ul li {
   text-align: right;
   letter-spacing: 0.07em;
 }
-
 /* line 712, ../sass/partials/_modules.scss */
 .cd-color-3 .right .phone ul, .cd-color-3 .right .address ul {
   width: 65%;
@@ -1623,26 +1612,23 @@ nav[role="navigation"] ul.lang li.selected a {
   text-align: right;
 }
 /* line 720, ../sass/partials/_modules.scss */
-
 .cd-color-3 .right .hours ul {
   float: left;
   width: 100%;
 }
-
 /* line 723, ../sass/partials/_modules.scss */
-
 .cd-color-3 .right .hours ul li {
   line-height: 1.8em;
   overflow: hidden;
   *zoom: 1;
 }
-
+/* line 726, ../sass/partials/_modules.scss */
 .cd-color-3 .right .hours ul li span.day {
   float: left;
   text-align: left;
   display: inline-block;
 }
-
+/* line 732, ../sass/partials/_modules.scss */
 .cd-color-3 .right .hours ul li span.time {
   float: right;
   font-size: 1em;
@@ -1650,55 +1636,53 @@ nav[role="navigation"] ul.lang li.selected a {
   display: inline-block;
 }
 
-
 /* line 744, ../sass/partials/_modules.scss */
 div.googlemap {
   width: 100%;
 }
 /* line 749, ../sass/partials/_modules.scss */
-
 div.googlemap iframe {
   width: 100%;
 }
 
-
+/* line 753, ../sass/partials/_modules.scss */
 footer {
   background-color: rgba(234, 230, 218, 0.96);
   text-align: center;
 }
-
+/* line 757, ../sass/partials/_modules.scss */
 footer p.rul {
   color: #484047;
   line-height: 4em;
   margin: 0;
   font-style: normal;
 }
-
+/* line 764, ../sass/partials/_modules.scss */
 footer a {
   color: #484047;
   border-bottom: 1px solid;
   font-style: italic;
 }
-
+/* line 769, ../sass/partials/_modules.scss */
 footer a:hover {
   border-bottom: none;
   color: #826845;
 }
 
-
+/* line 779, ../sass/partials/_modules.scss */
 #myImg, #myImg1, #myImg2 {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-
-#myImg:hover, #myImg1:hover, #myImg2:hover {
+/* line 787, ../sass/partials/_modules.scss */
+.gal img:hover {
   opacity: 0.7;
 }
 
 /* The Modal (background) */
-
+/* line 792, ../sass/partials/_modules.scss */
 .modal {
   display: none;
   /* Hidden by default */
@@ -1706,7 +1690,7 @@ footer a:hover {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-
+  padding-top: 65px;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -1721,7 +1705,7 @@ footer a:hover {
   background-color: rgba(0, 0, 0, 0.9);
   /* Black w/ opacity */
 }
-
+/* line 805, ../sass/partials/_modules.scss */
 .modal .prev, .modal .next {
   cursor: pointer;
   position: absolute;
@@ -1737,18 +1721,16 @@ footer a:hover {
 }
 
 /* Modal Content (image) */
-
+/* line 821, ../sass/partials/_modules.scss */
 .modal-content {
   margin: auto;
   display: block;
   max-width: 700px;
-
   max-height: 99%;
 }
 
 /* Caption of Modal Image */
-/* line 826, ../sass/partials/_modules.scss */
-
+/* line 830, ../sass/partials/_modules.scss */
 #caption {
   margin: auto;
   display: block;
@@ -1763,7 +1745,7 @@ footer a:hover {
 }
 
 /* Add Animation */
-
+/* line 845, ../sass/partials/_modules.scss */
 .modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -1788,7 +1770,7 @@ footer a:hover {
   }
 }
 /* The Close Button */
-
+/* line 863, ../sass/partials/_modules.scss */
 .close {
   position: absolute;
   top: 84px;
@@ -1798,7 +1780,7 @@ footer a:hover {
   transition: 0.3s;
 }
 
-
+/* line 873, ../sass/partials/_modules.scss */
 .close:hover,
 .close:focus {
   color: #bbb;
@@ -1807,7 +1789,6 @@ footer a:hover {
 }
 
 /* 100% Image Width on Smaller Screens */
-
 /* line 22, ../sass/styles_ex.scss */
 body, html, main {
   /* important */

@@ -248,10 +248,10 @@ $(document).ready(function () {
     var i = 0;
     var current;
     $('img', 'div.gal').each(function () {
-        $(this).attr('id', 'img' + i);
-        //console.log(i);
-        $(this).attr("src", myImages[i].src);
-        $(this).attr("alt", myImages[i].alt);
+//        $(this).attr('id', 'img' + i);
+//        //console.log(i);
+//        $(this).attr("src", myImages[i].src);
+//        $(this).attr("alt", myImages[i].alt);
         $(this).click(function(){
             current = parseInt(this.id.substring(3));
             modal.style.display = "block";
