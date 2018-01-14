@@ -324,7 +324,26 @@ $(document).ready(function () {
         modalImg.src = myImages[current].src;
         captionText.innerHTML = myImages[current].alt || '';
     }
+    $(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+            prevSlide();
+            break;
 
+        case 38: // up
+        break;
+
+        case 39: // right
+            nextSlide();
+            break;
+
+        case 40: // down
+        break;
+
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});
 
     //                    for  (var i = 0; i < myImages.length; i++) {
 //                                .attr('id', 'picture');
