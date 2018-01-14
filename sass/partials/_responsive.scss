@@ -174,24 +174,24 @@
         .photos {
             display: none;
         }
-        .slideshow-container {
-            display: block;
-            //background-color: #866845;
-            background-color: $color12;
-            .mySlides {
-                width: 40%;
-                min-width: 350px;
-                margin: auto;
-                padding-top: 7px;
-                .text {
-                    width: 40%;
-                    min-width: 350px;
+        /*        .slideshow-container {
+                    display: block;
+                    //background-color: #866845;
+                    background-color: $color12;
+                    .mySlides {
+                        width: 40%;
+                        min-width: 350px;
+                        margin: auto;
+                        padding-top: 7px;
+                        .text {
+                            width: 40%;
+                            min-width: 350px;
+                        }
+                    }
                 }
-            }
-        }
-        .slidePanel {
-            display: block;
-        }
+                .slidePanel {
+                    display: block;
+                }*/
     }
     .cd-color-3 {
         ul.contact {
@@ -403,6 +403,9 @@
         }
     }
     .cd-color-2 {
+        .column {
+            width: 25%;
+        }
         /*        .photos {
                     display: none;
                     //@include container;
@@ -430,23 +433,23 @@
                     }
                 }*/
         //My first carousel
-        .slideshow-container {
-            //display: block;
-            background-color: #ffffff;
-            .mySlides {
-                width: 100%;
-                min-width: 100%;
-                //margin: auto;
-                //padding: 0;
-                .text {
-                    width: 100%;
-                    min-width: 100%;
-                }
-            }
-        }
-        .slidePanel {
-            //display: block;
-        }
+        /*        .slideshow-container {
+                    //display: block;
+                    background-color: #ffffff;
+                    .mySlides {
+                        width: 100%;
+                        min-width: 100%;
+                        //margin: auto;
+                        //padding: 0;
+                        .text {
+                            width: 100%;
+                            min-width: 100%;
+                        }
+                    }
+                }*/
+        /*        .slidePanel {
+                    //display: block;
+                }*/
         //end My first carousel
         /*        #myCarousel {
                     display: block;

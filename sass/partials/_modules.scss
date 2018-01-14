@@ -274,7 +274,7 @@ nav[role="navigation"] {
     }
     span.space {
         //font-weight: bold;
-        letter-spacing: 0.15em;        
+        letter-spacing: 0.1em;        
     }    
     .inner-content {
         //background-color: $color13;
@@ -301,7 +301,7 @@ nav[role="navigation"] {
             }
         }
         div.face:nth-child(2) {
-            padding: 0 1.3em 0 1.3em;
+            padding: 0 1.5em 0 1.5em;
         }    
         div.card {
             width: 31%;
@@ -309,6 +309,7 @@ nav[role="navigation"] {
         }
         div.intro {
             width: 38%;
+            margin-top: 0.7em;
         }
         div.duble {
             display: none;
@@ -419,7 +420,7 @@ nav[role="navigation"] {
         }*/
 
     /* Slideshow container */
-    .slideshow-container {
+/*    .slideshow-container {
         display: none;
         max-width: 1000px;
         //width: 90%;
@@ -433,7 +434,7 @@ nav[role="navigation"] {
         display: none;
         //width: 90%;
         //margin: auto;
-    }
+    }*/
 
     /* Next & previous buttons */
 
@@ -794,7 +795,7 @@ footer {
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     //padding-top: 100px; /* Location of the box */
-    padding-top: 65px; /* Location of the box */
+    padding-top: 85px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -808,12 +809,13 @@ footer {
         top: 50%;
         width: auto;
         margin-top: -22px;
-        padding: 16px;
+        padding: 27px;
         color: white;
         font-weight: bold;
         font-size: 18px;
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
+        z-index: 100;
     }
 }
 
@@ -823,7 +825,7 @@ footer {
     display: block;
     //width: 80%;
     max-width: 700px;
-    max-height: 99%;
+    max-height: 95%;
 }
 
 /* Caption of Modal Image */
@@ -837,8 +839,8 @@ footer {
     letter-spacing: 0.17em;
     word-spacing: 0.5em;
     //font-weight: bold;
-    padding: 25px 0 0 0;
-    height: 50px;
+    padding: 8px 0 0 0;
+    height: 30px;
 }
 
 /* Add Animation */
@@ -862,12 +864,13 @@ footer {
 /* The Close Button */
 .close {
     position: absolute;
-    top: 84px;
-    right: 35px;
+    top: 76px;
+    right: 20px;
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 35px;
     //font-weight: bold;
     transition: 0.3s;
+    z-index: 100;
 }
 
 .close:hover,
