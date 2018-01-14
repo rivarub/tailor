@@ -117,6 +117,7 @@ $(document).ready(function () {
     var modal = document.getElementById('myModal');
     //var modal1 = document.getElementById('myModal1');
     // Get the image and insert it inside the modal - use its "alt" text as a caption
+/*    
     var img = document.getElementById('myImg');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
@@ -143,7 +144,7 @@ $(document).ready(function () {
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     }
-
+*/
 
 // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -307,7 +308,7 @@ $(document).ready(function () {
         current++;
         if (current < picturesCount - 1) {
             modalImg.src = myImages[current].src;
-            captionText.innerHTML = myImages[current].alt;
+            captionText.innerHTML = myImages[current].alt || '';
         }
     }
 
