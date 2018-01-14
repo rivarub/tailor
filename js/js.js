@@ -306,10 +306,11 @@ $(document).ready(function () {
     $('.nextSlide').click(nextSlide);
     function nextSlide() {
         current++;
-        if (current < picturesCount - 1) {
-            modalImg.src = myImages[current].src;
-            captionText.innerHTML = myImages[current].alt || '';
+        if (current == picturesCount - 1) {
+            current = 0;
         }
+        modalImg.src = myImages[current].src;
+        captionText.innerHTML = myImages[current].alt || '';
     }
 
 
