@@ -368,16 +368,12 @@ $(document).ready(function () {
         case 37: // left
             prevSlide();
             break;
-
-        case 38: // up
-        break;
-
         case 39: // right
             nextSlide();
             break;
-
-        case 40: // down
-        break;
+        case 27: // Esc
+            modal.style.display = "none";
+            break;
 
         default: return; // exit this handler for other keys
     }
