@@ -14,17 +14,17 @@ $(document).ready(function () {
             //$('.cd-bg-1').css('padding-top', '0');
 //            $('.nav-bottom').css('display', 'none');
         }
-        if ($(window).scrollTop() > 800 && $(window).scrollTop() < 1820) {
+        if ($(window).scrollTop() > 800 && $(window).scrollTop() < 2500) {
             $('.about').css('color', '#aa0019');
         } else {
             $('.about').css('color', '#484047');
         }
-        if ($(window).scrollTop() > 1819 && $(window).scrollTop() < 2730) {
+        if ($(window).scrollTop() > 2499 && $(window).scrollTop() < 4850) {
             $('.serv').css('color', '#aa0019');
         } else {
             $('.serv').css('color', '#484047');
         }
-        if ($(window).scrollTop() > 2729) {
+        if ($(window).scrollTop() > 4849) {
             $('.contacts').css('color', '#aa0019');
         } else {
             $('.contacts').css('color', '#484047');
