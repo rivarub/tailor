@@ -40,48 +40,30 @@ div.container {
 }
 .cd-bg-1 {
     p.rul {
-        @include suffix(3,12);
-        //@include post(1);
+        @include suffix(3,12);        
     }
-    .blockquote {
-        //@include pre(1);
-        //@include span-columns(8,12);
+    .blockquote {        
         @include pad(0.99,4,12);
-    }
-    /*    p.blockquote:nth-child(2) {
-            margin-bottom: 60px;
-        }*/
-    .inside {          
-        //width: 100%;
-        //hight: 100%;
+    }    
+    .inside {         
         .line {
-            @include pre(0.99,12); 
-            //margin-left: 8.5%;
+            @include pre(0.99,12);            
         }
         p[class*="opinion1"] {
-            @include pad(0.7,4.5,12);
-            //@include prefix(1,12);
-            //@include span-columns(8,12);
-            //margin-left: 25px;
+            @include pad(0.7,4.5,12);            
         }
-        p[class*="opinion2"] {
-            //width: 75%;
-            @include pad(0.7,2,12);
-            //@include span-columns(10,12);
-            //@include pre(-0.3);
-            //@include push(0.34);        
+        p[class*="opinion2"] {            
+            @include pad(0.7,2,12);                   
         }
     }
 }
 
 .cd-color-2 {
     .left {
-        @include span-columns(8,12);
-        //float: left;
+        @include span-columns(8,12);        
     }
     .right {
-        @include span-columns(4 omega,12);
-        //float: left;
+        @include span-columns(4 omega,12);        
         h2.rul, ul {
             @include pre(1.6);
         }
@@ -94,8 +76,7 @@ div.container {
 .cd-color-3 {
     .left {
         @include span-columns(7.9,12);
-        margin-right: 0;
-        //float: left;
+        margin-right: 0;        
         form {
             .col, .sub {
                 @include span-columns(3.7,12);
@@ -119,84 +100,7 @@ div.container {
         }
     }
     .right {        
-        @include span-columns(4.005 omega,12);
-        //@include pre(0.8);
-        @include prefix(0.34,12);
-        //float: left;
-        .part {
-            //@include pre(0.8);
-        }
-        ul {
-            //@include pre(1.6);
-        }
-        li {
-            //@include prefix(1.5,12);
-        }
+        @include span-columns(4.005 omega,12);        
+        @include prefix(0.34,12);    
     }
 }
-
-
-
-
-/*@include with-grid-settings(12,3em,0.5em,0) {
-    ul.contact, ul.menu {
-        //@include container;
-        //@include susy-grid-background;
-    }
-    ul.contact {
-        ul.navPhone {
-            //@include span-columns(3);
-            //@include prefix (1,12);
-            //@include nth-omega;
-        }
-        li:nth-last-child {
-            //@include span-columns(10 omega,12);
-        }
-
-    }
-    li.menu-link {
-        //@include span-columns(3);
-        //@include prefix (1,12);
-        //@include nth-omega; 
-        a, ul.lang  {
-            //float: right;
-            //text-align: right;
-        }
-    }
-}*/
-
-/*header[role="banner"],footer[role="contentinfo"] {
-    width: 100%;
-    display: block;
-
-}*/
-/*nav[role="navigation"] {
-    width: 25%;
-    float: left;
-    @include at-breakpoint($M) {
-        @include span-columns(3,12);
-    }
-}*/
-/*.main-content {
-    width: 70%;
-    float: right;
-    @include at-breakpoint($M) {
-        @include prefix(1,12);
-        @include span-columns(9 omega,12);
-    }
-}*/
-/*footer[role="contentinfo"] {
-    clear: both;
-}*/
-// Grid override for purchase links
-/*    @include with-grid-settings(24,3em,0.5em,0) {
-        .purchase-links-wrapper {
-            @include container;
-            @include susy-grid-background;
-        }
-        .purchase-link {
-            @include span-columns(6);
-            @include prefix (1,24);
-            @include nth-omega;
-        }
-    }*/
