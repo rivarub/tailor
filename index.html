@@ -538,7 +538,7 @@
                     <h1 class="rul">CONTACT us<br><!--span class="gold">Vlada Professional Tailoring & Alterations</span--></h1>
                     <div class="left">
                         <p class="rul"><span class="letter">P</span>lease fill out the following information and we will be in contact with you as soon as possible. Thank you for your interest in Vlada Professional Tailoring!</p>
-                        <form>
+                        <form method="POST" name="contactform" action="sendMail.php">
                             <div class="part">
                                 <div class="col">
                                     <label for="name">Name*</label>
@@ -550,7 +550,7 @@
                                 </div>
                                 <div class="col">
                                     <label for="name">Email</label>
-                                    <input type="text" name="emeil" id="emeil">
+                                    <input type="text" name="email" id="email">
                                 </div>
                             </div>
                             <div class="part">

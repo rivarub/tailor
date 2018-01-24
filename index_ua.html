@@ -577,7 +577,7 @@
                                         </div>-->
                     <div class="left">
                         <p class="rul"><span class="letter">Б</span>удь ласка, залиште свою контактну інформацію, і ми зв'яжемося з Вами, як тільки зможемо. Дякуємо за Ваш інтерес до Vlada Professional Tailoring!</p>
-                        <form>
+                        <form method="POST" name="contactform" action="sendMail.php">
                             <div class="part">
                                 <div class="col">
                                     <label for="name">Ім'я*</label>
@@ -589,7 +589,7 @@
                                 </div>
                                 <div class="col">
                                     <label for="name">Електронна скринька</label>
-                                    <input type="text" name="emeil" id="emeil">
+                                    <input type="text" name="email" id="email">
                                 </div>
                             </div>
                             <div class="part">
