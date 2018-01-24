@@ -20,13 +20,7 @@ and open the template in the editor.
 @import "partials/responsive";
 
 body, html, main {
-    /* important */
-    //height: 100%;
-    //font-family: "SansationRegular";
-    // Modernizr fallback for when there is no fontface support
-    /*    .no-fontface & {
-            //font-family: "Verdana"; //when not support fontface
-        }*/
+    
 }
 
 
@@ -98,44 +92,10 @@ body, html, main {
     p.rul {
         opacity: 0;
         animation-name: fadeIn;
-        animation-delay: 1s; // interval before start
-        animation-duration: 2s;
-        //animation-direction: alternate;
-        //animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-duration: 2s;        
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
-        animation-fill-mode: forwards;
-        //cursor: pointer;
-        //animation: 3s linear 0s normal none infinite running pulse;   
+        animation-fill-mode: forwards;         
     }
 }
-
-
-
-/*.cd-scrolling-bg {
-    min-height: 100%;
-}*/
-/*[class$="cd-container"] {
-    //width: 80%;
-    //max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}*/
-//end Fixed Background Scrolling
-/*TRANCBOX - opacity filtr background, content*/
-/*div.transbox {        
-    min-height: 100%;
-    margin: 30px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-    filter: alpha(opacity=60);  For IE8 and earlier 
-}
-
-div.transbox p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
-}*/

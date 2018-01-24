@@ -11,8 +11,7 @@
                 width: 25%;
                 margin-right: 1em;
                 margin-bottom: 1em;                
-                h3 {
-                    //display: none;
+                h3 {                    
                     @include font-size($profile-fs);
                     padding: 0 1em;
                 }                
@@ -46,8 +45,7 @@
                     padding-top: 0.5em;
                     padding-bottom: 0;
                     margin-bottom: 0;
-                }
-                //padding: 0;
+                }                
             }
         }
     }
@@ -55,30 +53,19 @@
 @media screen and (max-width: $screen-tablet) {
     p.rul, blockquote {
         margin-right: 0;
-    }
-    /*    #mobile-header {
-            display: block;
-            width: 100%;
-        }*/
+    }    
     header {
-        background-image: url("../img/tailoring_.jpg");
-        //display: none;
-        img {
-            //width: 70%;
+        background-image: url("../img/tailoring_.jpg");        
+        img {            
             width: 94%;
             @include centerer-down(true, true);
         }
-    }    
-    h1.rul {
-        //@include rhythm-margins(2, 1); //завеликі відступи прибрала коли робила слайдер.
-    }
+    }   
     .cd-bg-1 h1.rul {
         @include rhythm-padding(2.3, 0);
     }
     nav[role="navigation"] {
-        padding-bottom: 12px;
-        //margin-bottom: 0;
-        ///position: fixed;
+        padding-bottom: 12px;        
         .bar {
             display: block;
         }
@@ -101,25 +88,20 @@
                 text-align: center;
                 border-bottom: 1px solid $color11;
                 margin: 0;
-                padding: 0;
-                //line-height: 2.5em;
-                a {
-                    //line-height: 2.7em;
+                padding: 0;                
+                a {                    
                     line-height: 3em;
                     display: block;
-                    padding-top: 0.2em;
-                    //margin: 0 -1em;
+                    padding-top: 0.2em;                    
                     &:hover {
-                        border-bottom: none;
-                        //background-color: rgba($color8,0.5);
+                        border-bottom: none;                        
                         background-color: $color12;
                         color: $color1;
                     }
                 }
             }
         }
-        ul.mobile_navPhone {
-            //display: block;
+        ul.mobile_navPhone {            
             width: 100%;
             margin-top: 1em;
             padding-left: -1.5625em;
@@ -132,18 +114,6 @@
                 border-bottom: 1px solid $color11;
                 margin: 0;
                 padding: 10px 0;
-                //line-height: 2.5em;
-                /*                a {
-                                    line-height: 2.7em;
-                                    display: block;
-                                    //margin: 0 -1em;
-                                    &:hover {
-                                        border-bottom: none;
-                                        //background-color: rgba($color8,0.5);
-                                        background-color: $color11;
-                                        color: $color1;
-                                    }
-                                }*/
             }
         }
     }
@@ -153,12 +123,10 @@
     .cd-color-2, .cd-color-3 {
         .left {
             @include span-columns(12,12);
-            //float: left;
         }
         .right {
             @include rhythm-margins(0.5, 0.5);
-            @include span-columns(12,12);
-            //float: left;
+            @include span-columns(12,12);            
         }
     }
     .cd-color-2 {
@@ -173,25 +141,7 @@
         }
         .photos {
             display: none;
-        }
-        /*        .slideshow-container {
-                    display: block;
-                    //background-color: #866845;
-                    background-color: $color12;
-                    .mySlides {
-                        width: 40%;
-                        min-width: 350px;
-                        margin: auto;
-                        padding-top: 7px;
-                        .text {
-                            width: 40%;
-                            min-width: 350px;
-                        }
-                    }
-                }
-                .slidePanel {
-                    display: block;
-                }*/
+        }        
     }
     .cd-color-3 {
         ul.contact {
@@ -199,41 +149,7 @@
         }
         .part {
             @include margin-trailer(0.5);
-        }
-        form {
-            /*            .part {
-                            .col {
-                                width: 31%;
-                            }
-                            .area {
-                                width: 100%;
-                            }
-                            .sub {
-                                position: static;
-                                width: auto;
-                                margin-right: 0;
-                                @include rhythm-margins(1, 1);
-                            }
-                        }*/
-            /*            .col, .sub {
-                            @include span-columns(3.7,12);
-                            input {
-                                width: 100%;
-                            }
-                        }
-                        .col {
-                            float: left;
-                        }
-                        .sub {
-                            float: right;
-                        }
-                        .area {
-                            @include span-columns(7.4,12);
-                            textarea {
-                                width: 100%;
-                            }
-                        }*/
-        }
+        }        
         .right {
             border-left: none;
             padding-left: 0;
@@ -249,15 +165,13 @@
                 //float: left;
                 width: 45%;
                 margin-right: 5%; 
-                .phone, .address {
-                    //width: 100%;
+                .phone, .address {                    
                     ul {
                         width: 100%;
                         li {
                             text-align: left;
                         }
                     }
-
                 }
             }
             .hours {
@@ -284,25 +198,14 @@
         ul.contact {
             i.fa-phone, i.fa-map-marker {
                 font-size: 23px;
-            }
-            /*            a.marker:hover {           
-                            i.fa-phone {
-                                color: $color8;
-                            }
-                        }*/
+            }            
             ul.lang {
                 font-size: 1.1em;
             }
         }
-    }
-    /*    #mobile-header {
-            display: block;
-            width: 100%;
-        }*/
+    }    
     header {
-        background-image: url("../img/tailoring_.jpg");
-        //background-image:  linear-gradient(to right, rgba(236, 228, 219, 0.7) 0%, rgba(236, 228, 219, 0.3) 100%), url("../img/tailoring_4.jpg");
-        //display: none;
+        background-image: url("../img/tailoring_.jpg");        
         img {
             width: 100%;
         }
@@ -315,42 +218,23 @@
     }
 
     .profile {        
-        div.inner-content {
-            //max-width: $container-width;    
-            //margin: auto;    
-            //@include container;
-            /*            div.fullscreen {
-                            display: none;
-                        }*/
+        div.inner-content {            
             div.card {
                 width: 48%;
                 margin-right: auto;
-                margin-bottom: auto;                
-                /*                                h3 {
-                                                    //display: none;
-                                                    @include font-size($ul-menu);
-                                                    
-                                                }*/
+                margin-bottom: auto;
             }
             div.card:first-child {
                 margin-right: 4%;
             }
             div.face:nth-child(3) {
                 margin-right: 0;
-            }/*
-            div.face:last-child {
-                padding: 0;
-            }*/
-            div.duble {
-                //display: block; 
+            }
+            div.duble {                
                 width: 100%;
                 margin-top: 1em;
-                float: left;
-                //text-align: justify;
-                pading: 0;
-                /*                p:first-child {
-                                    padding-top: 12em;
-                                }                */
+                float: left;                
+                pading: 0;                
             }
             div.face {
                 padding: 0;
@@ -360,120 +244,31 @@
                     margin-bottom: 0;
                 }
             }
-
         }
     }
 
     .cd-fixed-bg.cd-bg-1 {
         padding-top: 0;
-        background-image: url("../img/tailor1_mobile.jpg");
-        //background-color: #90350c;
+        background-image: url("../img/tailor1_mobile.jpg");        
         p.rul {
-            @include suffix(0,12);
-            //@include post(1);
+            @include suffix(0,12);            
         }
-        .blockquote {
-            //@include pre(1);
-            //@include span-columns(8,12);
+        .blockquote {            
             @include pad(0.99,0,12);
-        }
-        /*    p.blockquote:nth-child(2) {
-                margin-bottom: 60px;
-            }*/
-        .inside {          
-            //width: 100%;
-            //hight: 100%;
-            /*            .line {
-                            @include pre(0.99,12); 
-                            //margin-left: 8.5%;
-                        }*/
+        }        
+        .inside {
             p[class~="opinion1"] {
-                @include pad(0.7,0,12);
-                //@include prefix(1,12);
-                //@include span-columns(8,12);
-                //margin-left: 25px;
+                @include pad(0.7,0,12);                
             }
-            p[class~="opinion2"] {
-                //width: 75%;
-                @include pad(0.7,0,12);
-                //@include span-columns(10,12);
-                //@include pre(-0.3);
-                //@include push(0.34);        
+            p[class~="opinion2"] {                
+                @include pad(0.7,0,12);                        
             }
         }
     }
     .cd-color-2 {
         .column {
             width: 25%;
-        }
-        /*        .photos {
-                    display: none;
-                    //@include container;
-                    //@include susy-grid-background;
-                    background-color: $color9;
-                    //margin-bottom: gutter(12);
-                    @include clearfix;
-                    @include margin-leader(2);
-                    padding: gutter(20);//top, bottom
-                    .photo {
-                        //@include span-columns(12,12);
-                        //margin-bottom: gutter(12);
-                        //@include gallery(15 of 15);
-                        width: 100%;
-                        padding: 3px;
-                        //float: none;
-                    }
-                                .photo:nth-child(5n+1) {
-                                    margin-left: 0;
-                                    margin-right: 0;
-                                }
-                    .photo:nth-child(1n+0) {
-                        margin-left: 0;
-                        margin-right: 0;
-                    }
-                }*/
-        //My first carousel
-        /*        .slideshow-container {
-                    //display: block;
-                    background-color: #ffffff;
-                    .mySlides {
-                        width: 100%;
-                        min-width: 100%;
-                        //margin: auto;
-                        //padding: 0;
-                        .text {
-                            width: 100%;
-                            min-width: 100%;
-                        }
-                    }
-                }*/
-        /*        .slidePanel {
-                    //display: block;
-                }*/
-        //end My first carousel
-        /*        #myCarousel {
-                    display: block;
-                                .left carousel-control {
-                                    .glyphicon-batton-left {
-                                        left: 5%;
-                                    }
-                                }
-                    .carousel-control {
-                        //background-image: none;
-                        .glyphicon-myCarousel-right::before {
-                            content: "";                    
-                        }
-                        span.glyphicon-myCarousel-right {
-                            right: 5%;
-                            margin-right: -10px;
-                            display: inline-block;
-                            margin-top: -10px;
-                            position: absolute;
-                            top: 50%;
-                            z-index: 5;
-                        }                
-                    } 
-                }*/
+        }        
     }
     .cd-color-3 {
         .left {
@@ -502,7 +297,6 @@
                     position: static;
                 }                
             }
-
         }
         .right {
             .part {
@@ -520,14 +314,7 @@
                 margin-top: 1em;                
             }
         }
-
-    }
-
-    /*footer {
-            p {
-                font-size: 0.7em;
-            }
-        }*/
+    }    
 }
 
 
@@ -537,38 +324,6 @@
             max-width: 100%;
             width: 100%;
             padding: 5em 0 5em 0;
-            //margin: auto;    
-            //@include container;
-            /*            div.fullscreen {
-                            display: none;
-                        }*/
-            /*            div.card {
-                            width: 25%;
-                            margin-right: 1em;
-                            margin-bottom: 1em;                
-                            h3 {
-                                //display: none;
-                                @include font-size($profile-fs);
-                                padding: 0 1em;
-                            }                
-                        }*/
-            /*            div.face {
-                            padding: 0;
-                            div.fotoFraim {
-                                padding-top: 0.5em;
-                                padding-bottom: 0;
-                                margin-bottom: 0;
-                            }                
-                        }*/
-            /*            div.face:nth-child(3) {
-                            margin-right: 2em;
-                            h3 {
-                                padding: 0 0.5em;
-                            }
-                        }*/
-            /*            div.face:last-child {
-                            padding: 0;
-                        }*/
             div.card {
                 width: 50%;
             }
@@ -576,30 +331,8 @@
                 margin-right: 0;
             }
             div.face:last-child {
-                padding: 1em 1.5625em 0 1.5625em;
-                //padding-left: 1.5625em;
-                //padding-right: 1.5625em;              
-            }
-            div.duble {                
-                //padding-left: 1.5625em;
-                //padding-right: 1.5625em;
-                /*                max-width: $container-width;    
-                                margin: auto;    
-                                @include container;
-                                display: block; */
-                //width: 100%;
-                //float: none;
-                //text-align: justify;
-                //pading: 0;                
-            }
-            /*            div.face {
-                            div.fotoFraim {
-                                padding-top: 0.5em;
-                                padding-bottom: 0;
-                                margin-bottom: 0;
-                            }
-                            //padding: 0;
-                        }*/
+                padding: 1em 1.5625em 0 1.5625em;                             
+            }  
         }
     }
 }
