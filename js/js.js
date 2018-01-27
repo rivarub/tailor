@@ -1,4 +1,14 @@
 $(document).ready(function () {
+//slow-scroll
+        var $page = $('html, body');
+        $('a[href*="#"]').click(function () {
+            $page.animate({
+                scrollTop:$($.attr(this, 'href')).offset().top
+            }, 1500);
+            return false;
+        });
+
+//menu-colore
     $(window).scroll(function ()
     {
         if ($(window).scrollTop() > 0) {
@@ -23,7 +33,7 @@ $(document).ready(function () {
         }
     });
 
-    //Mobile-nav
+//Mobile-nav
     showMobileMenu = false;
     $('.mobile').hide();
     $('.bar').click(function (event) {
@@ -45,7 +55,7 @@ $(document).ready(function () {
         $('nav').css('padding-bottom', '16px');
     });
 
-    //Mobile-Phone
+//Mobile-Phone
     if ($(window).width() < 992) {
         showMobile_navPhoneMenu = false;
         $('.mobile_navPhone').hide();
@@ -64,19 +74,19 @@ $(document).ready(function () {
         });
     }
 
-    // MODAL
-    // Get the modal
+// MODAL
+// Get the modal
     var modal = document.getElementById('myModal');
 
-    // Get the <span> element that closes the modal
+// Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
     }
 
-    // Promko
+// Promko
     var myImages = new Array();
     var picturesCount = 40;
     for (i = 0; i < picturesCount; i++) {
@@ -212,5 +222,5 @@ $(document).ready(function () {
         }
         e.preventDefault(); // prevent the default action (scroll / move caret)
     });
-    // END GALLERY MODAL
+// END GALLERY MODAL
 });
