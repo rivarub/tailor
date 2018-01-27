@@ -1,4 +1,6 @@
-var menu_selector = "nav";
+/*
+ * 
+ var menu_selector = "nav";
 function onScroll(){
 	var scroll_top = $(document).scrollTop();
 	$(menu_selector + " a").each(function(){
@@ -11,6 +13,32 @@ function onScroll(){
 			$(this).removeClass("active");
 		}
 	});
+}
+*/
+function isVisible(tag) {
+    var t = $(tag);
+    var w = $(window);
+    var wt = w.scrollTop();
+    console.log('window.scrollTop()='+wt);
+    var tt = t.offset().top;
+    console.log('services.offset().top='+tt);
+    var tb = tt + t.height();
+    return ((tb <= wt + w.height()) && (tt <= wt));
+}
+
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    //console.log('docViewTop='+docViewTop);
+    var docViewBottom = docViewTop + $(window).height();
+    console.log('docViewBottom='+docViewBottom);
+    var elemTop = $(elem).offset().top;
+    //console.log('elemTop='+elemTop);
+    var elemBottom = elemTop + $(elem).height();
+    console.log('elemBottom='+elemBottom);
+
+    return ((elemTop <= docViewTop) && (elemBottom >= docViewBottom));
 }
 
 $(document).ready(function () {
@@ -28,11 +56,33 @@ $(document).ready(function () {
 //menu-colore
     $(window).scroll(function ()
     {
+        var a = $("#about");
+        var s = $("#services");
+        var c = $("#contact_us");
         if ($(window).scrollTop() > 0) {
             $('nav').css('position', 'fixed').css('top', '0').css('width', '100%');
         } else {
             $('header').css('margin-top', '4em');
         }
+        
+        if (isScrolledIntoView(a)) {
+            $('.about').css('color', '#aa0019');
+        } else {
+            $('.about').css('color', '#484047');
+        }
+        
+        if (isScrolledIntoView(s)) {
+            $('.serv').css('color', '#aa0019');
+        } else {
+            $('.serv').css('color', '#484047');
+        }
+        
+        if (isScrolledIntoView(c)) {
+            $('.contacts').css('color', '#aa0019');
+        } else {
+            $('.contacts').css('color', '#484047');
+        }
+        
 //        if ($(window).scrollTop() > 800 && $(window).scrollTop() < 2450) {
 //            $('.about').css('color', '#aa0019');
 //        } else {
@@ -49,7 +99,7 @@ $(document).ready(function () {
 //            $('.contacts').css('color', '#484047');
 //        }
     });
-    
+/*    
     //menu-scroll color
     $(document).on("scroll", onScroll);
 	$("a[href^=#]").click(function(e){
@@ -66,7 +116,7 @@ $(document).ready(function () {
 			$(document).on("scroll", onScroll);
 		});
 	});
-    
+*/    
 
 //Mobile-nav
     showMobileMenu = false;
