@@ -1,3 +1,18 @@
+var menu_selector = "nav";
+function onScroll(){
+	var scroll_top = $(document).scrollTop();
+	$(menu_selector + " a").each(function(){
+		var hash = $(this).attr("href");
+		var target = $(hash);
+		if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+			$(menu_selector + " a.active").removeClass("active");
+			$(this).addClass("active");
+		} else {
+			$(this).removeClass("active");
+		}
+	});
+}
+
 $(document).ready(function () {
 //slow-scroll
         var $page = $('html, body');
@@ -5,7 +20,9 @@ $(document).ready(function () {
             $page.animate({
                 scrollTop:$($.attr(this, 'href')).offset().top
             }, 1500);
-            return false;            
+            //$(this).css('color', '#aa0019');
+            return false;
+            
         });
 
 //menu-colore
@@ -16,22 +33,40 @@ $(document).ready(function () {
         } else {
             $('header').css('margin-top', '4em');
         }
-        if ($(window).scrollTop() > 800 && $(window).scrollTop() < 2450) {
-            $('.about').css('color', '#aa0019');
-        } else {
-            $('.about').css('color', '#484047');
-        }
-        if ($(window).scrollTop() > 2449 && $(window).scrollTop() < 4800) {
-            $('.serv').css('color', '#aa0019');
-        } else {
-            $('.serv').css('color', '#484047');
-        }
-        if ($(window).scrollTop() > 4799) {
-            $('.contacts').css('color', '#aa0019');
-        } else {
-            $('.contacts').css('color', '#484047');
-        }
+//        if ($(window).scrollTop() > 800 && $(window).scrollTop() < 2450) {
+//            $('.about').css('color', '#aa0019');
+//        } else {
+//            $('.about').css('color', '#484047');
+//        }
+//        if ($(window).scrollTop() > 2449 && $(window).scrollTop() < 4800) {
+//            $('.serv').css('color', '#aa0019');
+//        } else {
+//            $('.serv').css('color', '#484047');
+//        }
+//        if ($(window).scrollTop() > 4799) {
+//            $('.contacts').css('color', '#aa0019');
+//        } else {
+//            $('.contacts').css('color', '#484047');
+//        }
     });
+    
+    //menu-scroll color
+    $(document).on("scroll", onScroll);
+	$("a[href^=#]").click(function(e){
+		e.preventDefault();
+		$(document).off("scroll");
+		$(menu_selector + " a.active").removeClass("active");
+		$(this).addClass("active");
+		var hash = $(this).attr("href");
+		var target = $(hash);
+		$("html, body").animate({
+		    scrollTop: target.offset().top
+		}, 500, function(){
+			window.location.hash = hash;
+			$(document).on("scroll", onScroll);
+		});
+	});
+    
 
 //Mobile-nav
     showMobileMenu = false;

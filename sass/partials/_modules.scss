@@ -51,7 +51,10 @@ nav[role="navigation"] {
     }
     a:focus {
         outline: none;
-    }    
+    }
+    a.active {
+        color: #aa0019;
+    }
     li {
         display: inline-block;
         float: left;
