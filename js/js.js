@@ -5,7 +5,7 @@ $(document).ready(function () {
             $page.animate({
                 scrollTop:$($.attr(this, 'href')).offset().top
             }, 1500);
-            return false;
+            return false;            
         });
 
 //menu-colore

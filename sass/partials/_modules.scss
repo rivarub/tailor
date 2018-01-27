@@ -48,6 +48,9 @@ nav[role="navigation"] {
     a {
         border-bottom: none;
         @include button-links($color6,$color4);        
+    }
+    a:focus {
+        outline: none;
     }    
     li {
         display: inline-block;
