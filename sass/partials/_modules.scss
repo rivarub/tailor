@@ -2,14 +2,21 @@
 header {
     height: 100%;   
     margin-top: 0.2em;    
-    background-image: linear-gradient(to right, rgba(236, 228, 219, 0.7) 0%, rgba(236, 228, 219, 0.3) 100%), url("../img/tailoring_3.jpg");    
+    //background: -webkit-linear-gradient(center top , #9E9E9E, #454545) repeat scroll 0 0 transparent;
+    background-image: linear-gradient(to right, rgba(236, 228, 219, 0.6) 0%, rgba(236, 228, 219, 0.2) 100%), url("../img/tailoring_3.jpg"); 
+    background-image: -webkit-linear-gradient(left, rgba(236, 228, 219, 0.6) 0%, rgba(236, 228, 219, 0.2) 100%), url("../img/tailoring_3.jpg"); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+    //background-image: linear-gradient(to right, rgba(236, 228, 219, 0.7) 0%, rgba(236, 228, 219, 0.3) 100%), url("../img/tailoring_3.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     img {
         width: 100%;        
         max-width: 77em;
+        -webkit-transform: translate(-50%, -50%);
         @include centerer-middl-down(true, true);
     }
     #home {

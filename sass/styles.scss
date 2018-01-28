@@ -36,8 +36,8 @@ body, html, main {
 
 //ANIMATION
 
-@-webkit-keyframes fadeIn {
-    from { opacity: 0;            
+/*@-webkit-keyframes fadeIn {
+    from { opacity: 1;            
     }
     to { opacity: 1;         
     }
@@ -59,12 +59,12 @@ body, html, main {
     }
     to { opacity: 1;         
     }
-}
+}*/
 
 .cd-bg-1 {
     h1.rul {
-        opacity: 0;
-        -webkit-animation-name: fadeIn;
+        opacity: 1;
+/*        -webkit-animation-name: fadeIn;
         -webkit-animation-delay: 0s;
         -webkit-animation-duration: 3s;        
         -webkit-animation-iteration-count: 1;
@@ -87,15 +87,15 @@ body, html, main {
         animation-duration: 3s;        
         animation-iteration-count: 1;
         animation-timing-function: linear;
-        animation-fill-mode: forwards;
+        animation-fill-mode: forwards;*/
     }
     p.rul {
-        opacity: 0;
-        animation-name: fadeIn;
+        opacity: 1;
+/*        animation-name: fadeIn;
         animation-delay: 1s;
         animation-duration: 2s;        
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
-        animation-fill-mode: forwards;         
+        animation-fill-mode: forwards;         */
     }
 }
