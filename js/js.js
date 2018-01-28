@@ -144,11 +144,11 @@ $(document).ready(function () {
 
 //Mobile-nav
     showMobileMenu = false;
-    $('.mobile').hide();
+    //$('.mobile').hide();
     $('.bar').click(function (event) {
-        $('.mobile_navPhone').hide();
-        $('.fa-phone').css('color', '#aa0019');
-        $('nav').css('position', 'fixed');
+        //$('.mobile_navPhone').hide();
+        //$('.fa-phone').css('color', '#aa0019');
+        //$('nav').css('position', 'fixed');
         showMobileMenu = !showMobileMenu;
         if (showMobileMenu == true) {
             $('.mobile').show();
