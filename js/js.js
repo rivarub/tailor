@@ -30,13 +30,13 @@ function isVisible(tag) {
 function isScrolledIntoView(elem)
 {
     var docViewTop = $(window).scrollTop();
-    //console.log('docViewTop='+docViewTop);
+    console.log('docViewTop='+docViewTop);
     var docViewBottom = docViewTop + $(window).height();
-    console.log('docViewBottom='+docViewBottom);
+    //console.log('docViewBottom='+docViewBottom);
     var elemTop = $(elem).offset().top;
-    //console.log('elemTop='+elemTop);
+    console.log('elemTop='+elemTop);
     var elemBottom = elemTop + $(elem).height();
-    console.log('elemBottom='+elemBottom);
+    //console.log('elemBottom='+elemBottom);
 
     return ((elemTop <= docViewTop) && (elemBottom >= docViewBottom));
 }
@@ -54,17 +54,40 @@ $(document).ready(function () {
         });
 
 //menu-colore
+    var aboutTop = $("#about").offset().top;
+    var servicesTop = $("#services").offset().top;
+    var contact_usTop = $("#contact_us").offset().top;
     $(window).scroll(function ()
     {
-        var a = $("#about");
-        var s = $("#services");
-        var c = $("#contact_us");
+        var docViewTop = $(window).scrollTop();
+        //var elemTop = $(elem).offset().top;
+        //var a = $("#about");
+        //var s = $("#services");
+        //var c = $("#contact_us");
         if ($(window).scrollTop() > 0) {
             $('nav').css('position', 'fixed').css('top', '0').css('width', '100%');
         } else {
             $('header').css('margin-top', '4em');
         }
         
+        if(docViewTop >= aboutTop && docViewTop < servicesTop) {
+            $('.about').css('color', '#aa0019');
+            $('.serv').css('color', '#484047');
+            $('.contacts').css('color', '#484047');
+        } else if (docViewTop >= servicesTop && docViewTop < contact_usTop) {
+            $('.serv').css('color', '#aa0019');
+            $('.about').css('color', '#484047');
+            $('.contacts').css('color', '#484047');
+        } else if (docViewTop >= contact_usTop) {
+            $('.contacts').css('color', '#aa0019');
+            $('.about').css('color', '#484047');
+            $('.serv').css('color', '#484047');
+        } else {
+            $('.about').css('color', '#484047');
+            $('.serv').css('color', '#484047');
+            $('.contacts').css('color', '#484047');
+        }
+/* працює, але з мертвими зонами між розділами        
         if (isScrolledIntoView(a)) {
             $('.about').css('color', '#aa0019');
         } else {
@@ -82,7 +105,7 @@ $(document).ready(function () {
         } else {
             $('.contacts').css('color', '#484047');
         }
-        
+*/        
 //        if ($(window).scrollTop() > 800 && $(window).scrollTop() < 2450) {
 //            $('.about').css('color', '#aa0019');
 //        } else {
