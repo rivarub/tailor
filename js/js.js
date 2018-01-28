@@ -54,9 +54,7 @@ $(document).ready(function () {
         });
 
 //menu-colore
-    var aboutTop = $("#about").offset().top;
-    var servicesTop = $("#services").offset().top;
-    var contact_usTop = $("#contact_us").offset().top;
+   
     $(window).scroll(function ()
     {
         var docViewTop = $(window).scrollTop();
@@ -64,6 +62,9 @@ $(document).ready(function () {
         //var a = $("#about");
         //var s = $("#services");
         //var c = $("#contact_us");
+        var aboutTop = $("#about").offset().top;
+        var servicesTop = $("#services").offset().top;
+        var contact_usTop = $("#contact_us").offset().top;
         if ($(window).scrollTop() > 0) {
             $('nav').css('position', 'fixed').css('top', '0').css('width', '100%');
         } else {
