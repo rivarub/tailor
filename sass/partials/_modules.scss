@@ -397,6 +397,25 @@ nav[role="navigation"] {
     .header {
         text-align: center;
         padding: 32px;
+        button {
+            background-color: $color13;
+            padding: 0.3em 0.9em;
+            margin: 0 0.3em;
+            //border-radius: 4px;
+            background: linear-gradient(to bottom, $color13 0%, #fbfbfb 8%, #dcd7c7 100%);            
+            box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.1);
+            font-size: 1.04em;
+            /*text-transform: uppercase;*/
+            letter-spacing: 0.15em;
+            color: $color6;
+            border: 1px solid rgb(214, 210, 196);
+            &:hover {
+                    background: linear-gradient(to bottom, $color13 0%, #fbfbfb 8%, #bfb79f 100%);
+                    /*border: none;*/
+                    border: 1px solid #bfb79f;
+                    color: $color6;
+                }
+        }
     }
     .gal {        
         padding-left: 0.7%;
