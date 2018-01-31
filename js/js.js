@@ -62,9 +62,9 @@ $(document).ready(function () {
         //var a = $("#about");
         //var s = $("#services");
         //var c = $("#contact_us");
-        var aboutTop = $("#about").offset().top;
-        var servicesTop = $("#services").offset().top;
-        var contact_usTop = $("#contact_us").offset().top;
+        var aboutTop = $("#about").offset().top-20;
+        var servicesTop = $("#services").offset().top-20;
+        var contact_usTop = $("#contact_us").offset().top-20;
         if ($(window).scrollTop() > 0) {
             $('nav').css('position', 'fixed').css('top', '0').css('width', '100%');
         } else {
