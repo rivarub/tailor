@@ -1250,8 +1250,8 @@ nav[role="navigation"] ul.lang li.selected a {
 /* line 400, ../sass/partials/_modules.scss */
 .cd-color-2 .header button {
   background-color: rgba(234, 230, 218, 0.96);
-  padding: 0.3em 0.9em;
-  margin: 0 0.3em;
+  padding: 0.3em 0.5em;
+  margin: 0 0.2em;
   background: linear-gradient(to bottom, rgba(234, 230, 218, 0.96) 0%, #fbfbfb 8%, #dcd7c7 100%);
   box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.1);
   font-size: 1.04em;
