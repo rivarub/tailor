@@ -268,7 +268,10 @@
     .cd-color-2 {
         .column {
             width: 25%;
-        }        
+        }       
+        .header {            
+            padding: 32px 0;            
+        }
     }
     .cd-color-3 {
         .left {
@@ -333,6 +336,23 @@
             div.face:last-child {
                 padding: 1em 1.5625em 0 1.5625em;                             
             }  
+        }
+    }
+    .cd-color-2 {              
+        .header {
+            button {
+                //background-color: $color13;
+                //padding: 0.3em 0.5em;
+                margin: 0 0.2em;
+                //border-radius: 4px;
+                //background: linear-gradient(to bottom, $color13 0%, #fbfbfb 8%, #dcd7c7 100%);            
+                //box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.1);
+                font-size: 0.9em;
+                /*text-transform: uppercase;*/
+                //letter-spacing: 0.15em;
+                //color: $color6;
+                //border: 1px solid rgb(214, 210, 196);            
+            }
         }
     }
 }
