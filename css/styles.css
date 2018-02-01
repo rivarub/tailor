@@ -1989,196 +1989,196 @@ footer a:hover {
   }
   /* line 145, ../sass/partials/_responsive.scss */
   .cd-color-2 .header {
-    padding: 32px 0;
+    padding: 30px 0;
+  }
+  /* line 147, ../sass/partials/_responsive.scss */
+  .cd-color-2 .header button {
+    padding: 0.3em 0.3em;
+    margin: 0.4em 0.2em 0 0.2em;
+    font-size: 0.95em;
+    /*text-transform: uppercase;*/
   }
 
-  /* line 153, ../sass/partials/_responsive.scss */
+  /* line 166, ../sass/partials/_responsive.scss */
   .cd-color-3 .part {
     margin-bottom: 12px;
   }
-  /* line 156, ../sass/partials/_responsive.scss */
+  /* line 169, ../sass/partials/_responsive.scss */
   .cd-color-3 .right {
     border-left: none;
     padding-left: 0;
   }
-  /* line 159, ../sass/partials/_responsive.scss */
+  /* line 172, ../sass/partials/_responsive.scss */
   .cd-color-3 .right .phone {
     margin-top: 0;
   }
-  /* line 163, ../sass/partials/_responsive.scss */
+  /* line 176, ../sass/partials/_responsive.scss */
   .cd-color-3 .right #first, .cd-color-3 .right .hours {
     margin-top: 2em;
     float: left;
   }
-  /* line 167, ../sass/partials/_responsive.scss */
+  /* line 180, ../sass/partials/_responsive.scss */
   .cd-color-3 .right #first {
     width: 45%;
     margin-right: 5%;
   }
-  /* line 172, ../sass/partials/_responsive.scss */
+  /* line 185, ../sass/partials/_responsive.scss */
   .cd-color-3 .right #first .phone ul, .cd-color-3 .right #first .address ul {
     width: 100%;
   }
-  /* line 174, ../sass/partials/_responsive.scss */
+  /* line 187, ../sass/partials/_responsive.scss */
   .cd-color-3 .right #first .phone ul li, .cd-color-3 .right #first .address ul li {
     text-align: left;
   }
-  /* line 180, ../sass/partials/_responsive.scss */
+  /* line 193, ../sass/partials/_responsive.scss */
   .cd-color-3 .right .hours {
     width: 45%;
     padding-left: 5%;
     border-left: 1px solid #6b5554;
   }
 
-  /* line 188, ../sass/partials/_responsive.scss */
+  /* line 201, ../sass/partials/_responsive.scss */
   footer p.rul {
     font-size: 0.7em;
   }
 }
 @media screen and (max-width: 540px) {
-  /* line 195, ../sass/partials/_responsive.scss */
+  /* line 208, ../sass/partials/_responsive.scss */
   h1.rul {
     padding-top: 64px;
     padding-bottom: 0px;
   }
 
-  /* line 201, ../sass/partials/_responsive.scss */
+  /* line 214, ../sass/partials/_responsive.scss */
   nav[role="navigation"] ul.contact i.fa-phone, nav[role="navigation"] ul.contact i.fa-map-marker {
     font-size: 23px;
   }
-  /* line 204, ../sass/partials/_responsive.scss */
+  /* line 217, ../sass/partials/_responsive.scss */
   nav[role="navigation"] ul.contact ul.lang {
     font-size: 1.1em;
   }
 
-  /* line 209, ../sass/partials/_responsive.scss */
+  /* line 222, ../sass/partials/_responsive.scss */
   header {
     background-image: url("../img/tailoring_.jpg");
   }
-  /* line 211, ../sass/partials/_responsive.scss */
+  /* line 224, ../sass/partials/_responsive.scss */
   header img {
     width: 100%;
   }
-  /* line 214, ../sass/partials/_responsive.scss */
+  /* line 227, ../sass/partials/_responsive.scss */
   header #home {
     display: none;
   }
-  /* line 217, ../sass/partials/_responsive.scss */
+  /* line 230, ../sass/partials/_responsive.scss */
   header #home-mobile {
     display: block;
   }
 
-  /* line 224, ../sass/partials/_responsive.scss */
+  /* line 237, ../sass/partials/_responsive.scss */
   .profile div.inner-content div.card {
     width: 48%;
     margin-right: auto;
     margin-bottom: auto;
   }
-  /* line 229, ../sass/partials/_responsive.scss */
+  /* line 242, ../sass/partials/_responsive.scss */
   .profile div.inner-content div.card:first-child {
     margin-right: 4%;
   }
-  /* line 232, ../sass/partials/_responsive.scss */
+  /* line 245, ../sass/partials/_responsive.scss */
   .profile div.inner-content div.face:nth-child(3) {
     margin-right: 0;
   }
-  /* line 235, ../sass/partials/_responsive.scss */
+  /* line 248, ../sass/partials/_responsive.scss */
   .profile div.inner-content div.duble {
     width: 100%;
     margin-top: 1em;
     float: left;
     pading: 0;
   }
-  /* line 241, ../sass/partials/_responsive.scss */
+  /* line 254, ../sass/partials/_responsive.scss */
   .profile div.inner-content div.face {
     padding: 0;
   }
-  /* line 243, ../sass/partials/_responsive.scss */
+  /* line 256, ../sass/partials/_responsive.scss */
   .profile div.inner-content div.face div.fotoFraim {
     padding-top: 0.5em;
     padding-bottom: 0;
     margin-bottom: 0;
   }
 
-  /* line 252, ../sass/partials/_responsive.scss */
+  /* line 265, ../sass/partials/_responsive.scss */
   .cd-fixed-bg.cd-bg-1 {
     padding-top: 0;
     background-image: url("../img/tailor1_mobile.jpg");
   }
-  /* line 255, ../sass/partials/_responsive.scss */
+  /* line 268, ../sass/partials/_responsive.scss */
   .cd-fixed-bg.cd-bg-1 p.rul {
     padding-right: 0%;
   }
-  /* line 258, ../sass/partials/_responsive.scss */
+  /* line 271, ../sass/partials/_responsive.scss */
   .cd-fixed-bg.cd-bg-1 .blockquote {
     padding-left: 6.31915%;
     padding-right: 0%;
   }
-  /* line 262, ../sass/partials/_responsive.scss */
+  /* line 275, ../sass/partials/_responsive.scss */
   .cd-fixed-bg.cd-bg-1 .inside p[class~="opinion1"] {
     padding-left: 4.46809%;
     padding-right: 0%;
   }
-  /* line 265, ../sass/partials/_responsive.scss */
+  /* line 278, ../sass/partials/_responsive.scss */
   .cd-fixed-bg.cd-bg-1 .inside p[class~="opinion2"] {
     padding-left: 4.46809%;
     padding-right: 0%;
   }
 
-  /* line 271, ../sass/partials/_responsive.scss */
+  /* line 284, ../sass/partials/_responsive.scss */
   .cd-color-2 .column {
     width: 25%;
   }
-  /* line 276, ../sass/partials/_responsive.scss */
-  .cd-color-2 .header button {
-    padding: 0.3em 0.3em;
-    margin: 0 0.2em;
-    font-size: 0.95em;
-    /*text-transform: uppercase;*/
-  }
 
-  /* line 293, ../sass/partials/_responsive.scss */
+  /* line 290, ../sass/partials/_responsive.scss */
   .cd-color-3 .left .part {
     margin-bottom: 0;
   }
-  /* line 297, ../sass/partials/_responsive.scss */
+  /* line 294, ../sass/partials/_responsive.scss */
   .cd-color-3 .left form .row:first-child {
     margin-bottom: 0;
   }
-  /* line 300, ../sass/partials/_responsive.scss */
+  /* line 297, ../sass/partials/_responsive.scss */
   .cd-color-3 .left form .col {
     width: 100%;
   }
-  /* line 302, ../sass/partials/_responsive.scss */
+  /* line 299, ../sass/partials/_responsive.scss */
   .cd-color-3 .left form .col label {
     font-size: 0.75em;
     margin-bottom: 0.05em;
   }
-  /* line 306, ../sass/partials/_responsive.scss */
+  /* line 303, ../sass/partials/_responsive.scss */
   .cd-color-3 .left form .col input {
     width: 100%;
     margin-bottom: 1em;
   }
-  /* line 311, ../sass/partials/_responsive.scss */
+  /* line 308, ../sass/partials/_responsive.scss */
   .cd-color-3 .left form .sub {
     width: 100%;
     margin-right: 0;
     margin-top: 2em;
     position: static;
   }
-  /* line 320, ../sass/partials/_responsive.scss */
+  /* line 317, ../sass/partials/_responsive.scss */
   .cd-color-3 .right .part {
     margin-bottom: 0;
   }
-  /* line 323, ../sass/partials/_responsive.scss */
+  /* line 320, ../sass/partials/_responsive.scss */
   .cd-color-3 .right #first, .cd-color-3 .right .hours {
     width: 100%;
   }
-  /* line 325, ../sass/partials/_responsive.scss */
+  /* line 322, ../sass/partials/_responsive.scss */
   .cd-color-3 .right #first .address, .cd-color-3 .right .hours .address {
     margin-top: 1em;
   }
-  /* line 329, ../sass/partials/_responsive.scss */
+  /* line 326, ../sass/partials/_responsive.scss */
   .cd-color-3 .right .hours {
     border-left: none;
     padding-left: 0;
@@ -2186,26 +2186,26 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 341, ../sass/partials/_responsive.scss */
+  /* line 338, ../sass/partials/_responsive.scss */
   .profile div.inner-content {
     max-width: 100%;
     width: 100%;
     padding: 5em 0 5em 0;
   }
-  /* line 345, ../sass/partials/_responsive.scss */
+  /* line 342, ../sass/partials/_responsive.scss */
   .profile div.inner-content div.card {
     width: 50%;
   }
-  /* line 348, ../sass/partials/_responsive.scss */
+  /* line 345, ../sass/partials/_responsive.scss */
   .profile div.inner-content div.face:first-child {
     margin-right: 0;
   }
-  /* line 351, ../sass/partials/_responsive.scss */
+  /* line 348, ../sass/partials/_responsive.scss */
   .profile div.inner-content div.face:last-child {
     padding: 1em 1.5625em 0 1.5625em;
   }
 
-  /* line 358, ../sass/partials/_responsive.scss */
+  /* line 355, ../sass/partials/_responsive.scss */
   .cd-color-2 .header button {
     font-size: 0.9em;
     /*text-transform: uppercase;*/
