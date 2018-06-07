@@ -363,10 +363,6 @@ p.rul {
 .cd-color-3 .right .part {
   margin-bottom: 24px;
 }
-/* line 42, ../sass/partials/_typography.scss */
-.cd-color-3 .right .phone {
-  margin-top: 7px;
-}
 /* line 45, ../sass/partials/_typography.scss */
 .cd-color-3 .right h3.rul {
   line-height: 1.6em;
@@ -802,12 +798,7 @@ div.container {
 }
 /* line 102, ../sass/partials/_layout.scss */
 .cd-color-3 .right {
-  width: 34.07447%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1.5625em;
-  display: inline;
-  padding-left: 2.17021%;
+  width: 100%;
 }
 
 /* line 2, ../sass/partials/_modules.scss */
@@ -1391,6 +1382,12 @@ nav[role="navigation"] ul.lang li.selected a {
   clear: both;
 }
 
+/* line 448, ../sass/partials/_modules.scss */
+.cd-color-2, .cd-color-3 {
+  /*    .right {
+          border-left: 1px solid $color4;
+      }*/
+}
 /* line 449, ../sass/partials/_modules.scss */
 .cd-color-2 h1.rul, .cd-color-3 h1.rul {
   color: #484047;
@@ -1399,10 +1396,6 @@ nav[role="navigation"] ul.lang li.selected a {
 /* line 453, ../sass/partials/_modules.scss */
 .cd-color-2 .gold, .cd-color-3 .gold {
   color: #a67c52;
-}
-/* line 456, ../sass/partials/_modules.scss */
-.cd-color-2 .right, .cd-color-3 .right {
-  border-left: 1px solid #6b5554;
 }
 /* line 459, ../sass/partials/_modules.scss */
 .cd-color-2 ul, .cd-color-3 ul {
@@ -1459,7 +1452,12 @@ nav[role="navigation"] ul.lang li.selected a {
   clear: none;
 }
 
-/* line 480, ../sass/partials/_modules.scss */
+/* line 479, ../sass/partials/_modules.scss */
+.cd-color-2 .right {
+  border-left: 1px solid #6b5554;
+}
+
+/* line 486, ../sass/partials/_modules.scss */
 .cd-color-3 form label {
   display: block;
   margin-bottom: 0.2em;
@@ -1468,37 +1466,37 @@ nav[role="navigation"] ul.lang li.selected a {
   letter-spacing: 0.15em;
   font-weight: 300;
 }
-/* line 488, ../sass/partials/_modules.scss */
+/* line 494, ../sass/partials/_modules.scss */
 .cd-color-3 form input {
   line-height: 2.5em;
   padding: 0 0.5em;
   color: #4d3b20;
   font-size: 1.2em;
 }
-/* line 494, ../sass/partials/_modules.scss */
+/* line 500, ../sass/partials/_modules.scss */
 .cd-color-3 form textarea {
   line-height: 1.5em;
   padding: 0.5em 0.5em;
   color: #4d3b20;
   font-size: 1.2em;
 }
-/* line 500, ../sass/partials/_modules.scss */
+/* line 506, ../sass/partials/_modules.scss */
 .cd-color-3 form input, .cd-color-3 form textarea {
   border: 1px solid #a67c52;
 }
-/* line 503, ../sass/partials/_modules.scss */
+/* line 509, ../sass/partials/_modules.scss */
 .cd-color-3 form .part {
   width: 100%;
   overflow: hidden;
   *zoom: 1;
   position: relative;
 }
-/* line 508, ../sass/partials/_modules.scss */
+/* line 514, ../sass/partials/_modules.scss */
 .cd-color-3 form .sub {
   position: absolute;
   bottom: 0;
 }
-/* line 511, ../sass/partials/_modules.scss */
+/* line 517, ../sass/partials/_modules.scss */
 .cd-color-3 form .sub input[type="submit"] {
   border-radius: 0;
   border: none;
@@ -1511,89 +1509,90 @@ nav[role="navigation"] ul.lang li.selected a {
   letter-spacing: 0.15em;
 }
 @media screen and (min-width: 200px) {
-  /* line 511, ../sass/partials/_modules.scss */
+  /* line 517, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 0.8em;
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 511, ../sass/partials/_modules.scss */
+  /* line 517, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 0.8em;
   }
 }
 @media screen and (min-width: 540px) {
-  /* line 511, ../sass/partials/_modules.scss */
+  /* line 517, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 0.95em;
   }
 }
 @media screen and (min-width: 767px) {
-  /* line 511, ../sass/partials/_modules.scss */
+  /* line 517, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 991px) {
-  /* line 511, ../sass/partials/_modules.scss */
+  /* line 517, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 1.04em;
   }
 }
 @media screen and (min-width: 1299px) {
-  /* line 511, ../sass/partials/_modules.scss */
+  /* line 517, ../sass/partials/_modules.scss */
   .cd-color-3 form .sub input[type="submit"] {
     font-size: 1.04em;
   }
 }
-/* line 521, ../sass/partials/_modules.scss */
+/* line 527, ../sass/partials/_modules.scss */
 .cd-color-3 form .sub input[type="submit"]:hover {
   background-color: #826845;
 }
-/* line 528, ../sass/partials/_modules.scss */
+/* line 534, ../sass/partials/_modules.scss */
 .cd-color-3 .right .part {
   overflow: hidden;
   *zoom: 1;
+  float: left;
 }
-/* line 531, ../sass/partials/_modules.scss */
+/* line 538, ../sass/partials/_modules.scss */
 .cd-color-3 .right h3.rul {
   float: left;
 }
-/* line 534, ../sass/partials/_modules.scss */
+/* line 541, ../sass/partials/_modules.scss */
 .cd-color-3 .right ul {
-  float: right;
+  float: left;
 }
-/* line 536, ../sass/partials/_modules.scss */
+/* line 544, ../sass/partials/_modules.scss */
 .cd-color-3 .right ul li {
-  text-align: right;
+  text-align: left;
   letter-spacing: 0.07em;
 }
-/* line 542, ../sass/partials/_modules.scss */
+/* line 551, ../sass/partials/_modules.scss */
 .cd-color-3 .right .phone ul, .cd-color-3 .right .address ul {
-  width: 65%;
+  width: 100%;
 }
-/* line 546, ../sass/partials/_modules.scss */
+/* line 555, ../sass/partials/_modules.scss */
 .cd-color-3 .right .address ul li {
-  text-align: right;
+  text-align: left;
 }
-/* line 550, ../sass/partials/_modules.scss */
+/* line 560, ../sass/partials/_modules.scss */
 .cd-color-3 .right .hours ul {
   float: left;
   width: 100%;
 }
-/* line 553, ../sass/partials/_modules.scss */
+/* line 563, ../sass/partials/_modules.scss */
 .cd-color-3 .right .hours ul li {
   line-height: 1.8em;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 556, ../sass/partials/_modules.scss */
+/* line 566, ../sass/partials/_modules.scss */
 .cd-color-3 .right .hours ul li span.day {
   float: left;
   text-align: left;
   display: inline-block;
 }
-/* line 561, ../sass/partials/_modules.scss */
+/* line 571, ../sass/partials/_modules.scss */
 .cd-color-3 .right .hours ul li span.time {
   float: right;
   font-size: 1em;
@@ -1601,53 +1600,53 @@ nav[role="navigation"] ul.lang li.selected a {
   display: inline-block;
 }
 
-/* line 573, ../sass/partials/_modules.scss */
+/* line 583, ../sass/partials/_modules.scss */
 div.googlemap {
   width: 100%;
 }
-/* line 575, ../sass/partials/_modules.scss */
+/* line 585, ../sass/partials/_modules.scss */
 div.googlemap iframe {
   width: 100%;
 }
 
-/* line 579, ../sass/partials/_modules.scss */
+/* line 589, ../sass/partials/_modules.scss */
 footer {
   background-color: rgba(234, 230, 218, 0.96);
   text-align: center;
 }
-/* line 582, ../sass/partials/_modules.scss */
+/* line 592, ../sass/partials/_modules.scss */
 footer p.rul {
   color: #484047;
   line-height: 4em;
   margin: 0;
   font-style: normal;
 }
-/* line 588, ../sass/partials/_modules.scss */
+/* line 598, ../sass/partials/_modules.scss */
 footer a {
   color: #484047;
   border-bottom: 1px solid;
   font-style: italic;
 }
-/* line 592, ../sass/partials/_modules.scss */
+/* line 602, ../sass/partials/_modules.scss */
 footer a:hover {
   border-bottom: none;
   color: #826845;
 }
 
-/* line 600, ../sass/partials/_modules.scss */
+/* line 610, ../sass/partials/_modules.scss */
 #myImg, #myImg1, #myImg2 {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-/* line 608, ../sass/partials/_modules.scss */
+/* line 618, ../sass/partials/_modules.scss */
 .gal img:hover {
   opacity: 0.7;
 }
 
 /* The Modal (background) */
-/* line 613, ../sass/partials/_modules.scss */
+/* line 623, ../sass/partials/_modules.scss */
 .modal {
   display: none;
   /* Hidden by default */
@@ -1670,7 +1669,7 @@ footer a:hover {
   background-color: rgba(0, 0, 0, 0.9);
   /* Black w/ opacity */
 }
-/* line 626, ../sass/partials/_modules.scss */
+/* line 636, ../sass/partials/_modules.scss */
 .modal .prev, .modal .next {
   cursor: pointer;
   position: absolute;
@@ -1687,7 +1686,7 @@ footer a:hover {
 }
 
 /* Modal Content (image) */
-/* line 643, ../sass/partials/_modules.scss */
+/* line 653, ../sass/partials/_modules.scss */
 .modal-content {
   margin: auto;
   display: block;
@@ -1696,7 +1695,7 @@ footer a:hover {
 }
 
 /* Caption of Modal Image */
-/* line 652, ../sass/partials/_modules.scss */
+/* line 662, ../sass/partials/_modules.scss */
 #caption {
   margin: auto;
   display: block;
@@ -1711,7 +1710,7 @@ footer a:hover {
 }
 
 /* Add Animation */
-/* line 667, ../sass/partials/_modules.scss */
+/* line 677, ../sass/partials/_modules.scss */
 .modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -1736,7 +1735,7 @@ footer a:hover {
   }
 }
 /* The Close Button */
-/* line 685, ../sass/partials/_modules.scss */
+/* line 695, ../sass/partials/_modules.scss */
 .close {
   position: absolute;
   top: 76px;
@@ -1747,7 +1746,7 @@ footer a:hover {
   z-index: 100;
 }
 
-/* line 696, ../sass/partials/_modules.scss */
+/* line 706, ../sass/partials/_modules.scss */
 .close:hover,
 .close:focus {
   color: #bbb;
